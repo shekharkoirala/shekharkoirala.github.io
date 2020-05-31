@@ -1,9 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>All Posts - Shekhar</title>
-        <link>http://example.org/posts/</link>
-        <description>All Posts | Shekhar</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 31 May 2020 14:17:54 &#43;0545</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+        <title>Random - Category - Shekhar</title>
+        <link>http://example.org/categories/random/</link>
+        <description>Random - Category - Shekhar</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 31 May 2020 14:17:54 &#43;0545</lastBuildDate><atom:link href="http://example.org/categories/random/" rel="self" type="application/rss+xml" /><item>
     <title>Create your own Blog Post</title>
     <link>http://example.org/posts/first_post/</link>
     <pubDate>Sun, 31 May 2020 14:17:54 &#43;0545</pubDate>

@@ -3,5 +3,12 @@
         <title>Categories - Category - Shekhar</title>
         <link>http://example.org/categories/</link>
         <description>Categories - Category - Shekhar</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="http://example.org/categories/" rel="self" type="application/rss+xml" /></channel>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 31 May 2020 14:17:54 &#43;0545</lastBuildDate><atom:link href="http://example.org/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Random</title>
+    <link>http://example.org/categories/random/</link>
+    <pubDate>Sun, 31 May 2020 14:17:54 &#43;0545</pubDate>
+    <author>Author</author>
+    <guid>http://example.org/categories/random/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
 </rss>
