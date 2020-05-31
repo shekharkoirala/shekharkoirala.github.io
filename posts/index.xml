@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>All Posts - Shekhar</title>
-        <link>http://example.org/posts/</link>
+        <link>http://shekharkoirala.github.io/posts/</link>
         <description>All Posts | Shekhar</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 31 May 2020 14:17:54 &#43;0545</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 31 May 2020 14:17:54 &#43;0545</lastBuildDate><atom:link href="http://shekharkoirala.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Create your own Blog Post</title>
-    <link>http://example.org/posts/first_post/</link>
+    <link>http://shekharkoirala.github.io/posts/first_post/</link>
     <pubDate>Sun, 31 May 2020 14:17:54 &#43;0545</pubDate>
     <author>Author</author>
-    <guid>http://example.org/posts/first_post/</guid>
+    <guid>http://shekharkoirala.github.io/posts/first_post/</guid>
     <description><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>I want to create a Blog. But there are some conditions that i want:</p>
 <ol>
