@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>AWS Lambda function for Data Scientist using Python. - Shekhar</title><meta name="Description" content="Personal Blog / Scribbles"><meta property="og:title" content="AWS Lambda function for Data Scientist using Python." />
+<meta property="og:description" content="Introduction
+The post is a quick guide on &ldquo;How we could use AWS lambda services to deploy some standalone task&rdquo;. This is really helpful when we dont have to buy instances for such task. By using word task, I mean scripts, that could scrap data, or a cron job data aggregator. The BEST thing about the cron job is that , it is way cheaper. A million hits by lambda function is Free in AWS." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://shekharkoirala.github.io/posts/lambda_function_python/" />
+<meta property="og:image" content="http://shekharkoirala.github.io/images/avatar.png"/>
+<meta property="article:published_time" content="2020-06-11T14:35:28+05:45" />
+<meta property="article:modified_time" content="2020-06-11T14:35:28+05:45" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://shekharkoirala.github.io/images/avatar.png"/>
+
+<meta name="twitter:title" content="AWS Lambda function for Data Scientist using Python."/>
+<meta name="twitter:description" content="Introduction
+The post is a quick guide on &ldquo;How we could use AWS lambda services to deploy some standalone task&rdquo;. This is really helpful when we dont have to buy instances for such task. By using word task, I mean scripts, that could scrap data, or a cron job data aggregator. The BEST thing about the cron job is that , it is way cheaper. A million hits by lambda function is Free in AWS."/>
+<meta name="application-name" content="Shekhar">
+<meta name="apple-mobile-web-app-title" content="Shekhar"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://shekharkoirala.github.io/posts/lambda_function_python/" /><link rel="prev" href="http://shekharkoirala.github.io/posts/first_post/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "AWS Lambda function for Data Scientist using Python.",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/shekharkoirala.github.io\/posts\/lambda_function_python\/"
+        },"genre": "posts","keywords": "Blog","wordcount":  994 ,
+        "url": "http:\/\/shekharkoirala.github.io\/posts\/lambda_function_python\/","datePublished": "2020-06-11T14:35:28+05:45","dateModified": "2020-06-11T14:35:28+05:45","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "shekhar"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Shekhar">Shekhar</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Shekhar">Shekhar</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">AWS Lambda function for Data Scientist using Python.</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>shekhar</a></span>&nbsp;<span class="post-category">included in <a href="/categories/random/"><i class="far fa-folder fa-fw"></i>Random</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-06-11">2020-06-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;994 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#step-1">Step 1</a></li>
+        <li><a href="#step-2">Step 2</a></li>
+        <li><a href="#step-3">step 3</a></li>
+        <li><a href="#step-3-1">Step 3</a></li>
+        <li><a href="#step-4">Step 4</a></li>
+        <li><a href="#step-5">Step 5</a></li>
+        <li><a href="#step-6">Step 6</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="introduction">Introduction</h2>
+<p>The post is a quick guide on &ldquo;How we could use AWS lambda services to deploy some standalone task&rdquo;. This is really helpful when we dont have to buy instances for such task. By using word task, I mean scripts, that could scrap data, or a cron job data aggregator. The BEST thing about the cron job is that , it is way cheaper. A million hits by lambda function is Free in AWS.</p>
+<p>The following steps could lets you get going. In this example below, I am aggregating data in MongoDB and store the output in Redis.</p>
+<h3 id="step-1">Step 1</h3>
+<p>Create function : <a href="https://console.aws.amazon.com/lambda/home?region=us-east-1" target="_blank" rel="noopener noreffer">https://console.aws.amazon.com/lambda/home?region=us-east-1</a>
+One has to login to the AWS console and create a lambda function.
+Think Lambda function as a task that we want to do here.</p>
+<p>To run a function , we need a script. Lets say : <code>lambda_function.py</code>
+The script wont run until it mets all its dependency. In Data Science world, pandas , numpy etc.
+We need to provide all the Dependency a script it requires.</p>
+<h3 id="step-2">Step 2</h3>
+<p>For managing the Dependencies : we could looked at the official Documentation. <a href="https://docs.aws.amazon.com/lambda/latest/dg/python-package.html" target="_blank" rel="noopener noreffer">https://docs.aws.amazon.com/lambda/latest/dg/python-package.html</a>
+In short: We want to dump all the dependencies in a folder.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">pip install --target ./package redis
+pip install --target ./package sentry_sdk
+pip install --target ./package motor
+</code></pre></div><p>Yeah, I didnt include pandas, numpy and scipy. Because that is different case.
+The AWS lambda works in different version of linux which doesnt support the pypi installation of pandas and numpy. As those libraries extensibly use cython for optimization.</p>
+<p>To use such Libraries, we will get to the new concept of Lmbda function ie : <code>LAYERS</code></p>
+<h3 id="step-3">step 3</h3>
+<p>Make your code ready, especially the Beginning and the end.
+Most of the standard python use <code>config.ini</code> or <code>.env</code> file to get the variables value. Change that to <code>os.environ.gte()</code> function.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">motor.motor_asyncio</span>
+<span class="kn">import</span> <span class="nn">asyncio</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">sentry_sdk</span>
+<span class="kn">import</span> <span class="nn">redis</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+
+<span class="k">class</span> <span class="nc">TrendingAggregator</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">sentry_url</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;default&#34;</span><span class="p">,</span> <span class="s2">&#34;sentry_url&#34;</span><span class="p">)</span>
+        <span class="n">sentry_env</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;default&#34;</span><span class="p">,</span> <span class="s2">&#34;sentry_env&#34;</span><span class="p">)</span>
+</code></pre></div><p>Similarly, at the end of the code.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">lambda_handler</span><span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+    <span class="n">trending</span> <span class="o">=</span> <span class="n">TrendingAggregator</span><span class="p">()</span>
+    <span class="n">trending</span><span class="o">.</span><span class="n">process</span><span class="p">()</span>
+</code></pre></div><p>You could change the function name <code>lambda_handler</code> and the filename   <code>lambda_function.py</code>
+but it requires you to change the name in AWS lambda function console too. So, for sake of lazyness, lets stick to the default naming.</p>
+<h3 id="step-3-1">Step 3</h3>
+<p>Make the shipment ready.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">~/my-function$ <span class="nb">cd</span> package
+~/my-function/package$ zip -r9 <span class="si">${</span><span class="nv">OLDPWD</span><span class="si">}</span>/function.zip .
+
+$ <span class="nb">cd</span> ..
+$  zip -g <span class="k">function</span>.zip lambda_function.py
+</code></pre></div><p>Here, what we did is , we zipped the packages [ dependencies ]  and then add our script to the <code>function.zip</code> file.</p>
+<h3 id="step-4">Step 4</h3>
+<p>You could see <code>Function code</code>, when you scroll down in the lambda dunction page in your AWS console  , and <code>Actions</code> box, where one get options like <code>upload a .zip file</code> or <code>upload a file from Amazon S3</code>
+Once you upload your zip file.  You will see your code [ unless your code is more that 10 MB ]</p>
+<p>There you could save and test the code.
+But since you need more complex dependencies You need to know little mroe about layers.</p>
+<h3 id="step-5">Step 5</h3>
+<p>Layers:
+If your code depends on AWS lambda function layers, you could do Three things to solve this.
+link to add layer to your lambda function <a href="https://console.aws.amazon.com/lambda/home?region=us-east-1#/add/layer?function=trending_aggregator" target="_blank" rel="noopener noreffer">https://console.aws.amazon.com/lambda/home?region=us-east-1#/add/layer?function=trending_aggregator</a>
+Note: <code>trending-aggregator</code> is my function name.</p>
+<h5 id="use-standard-layer">use standard layer</h5>
+<p>more info <a href="https://aws.amazon.com/blogs/aws/new-for-aws-lambda-use-any-programming-language-and-share-common-components/" target="_blank" rel="noopener noreffer">https://aws.amazon.com/blogs/aws/new-for-aws-lambda-use-any-programming-language-and-share-common-components/</a>
+its easy, its provided by AWS ( safe )</p>
+<p>One could select <code>Select from list of runtime compatible layers</code> when they are in their layer page and see the AWS standard layer name.
+<code>AWSLambda-Python6-SciPy1x</code></p>
+<h5 id="use-someone-else-layer">use someone else layer</h5>
+<p>yeah, well, whatever you gonna do, someone had already done it may be 5 years ago. So, you could use their layer. Until you have their layer code.
+Luckily someone shares the detail in a stackoverfflow question. Cheers.
+more info <a href="https://stackoverflow.com/questions/36054976/pandas-aws-lambda" target="_blank" rel="noopener noreffer">https://stackoverflow.com/questions/36054976/pandas-aws-lambda</a>
+One could select <code>Provide a layer version ARN</code> in their layer page.
+and add this arn code <code>arn:aws:lambda:us-east-1:113088814899:layer:Klayers-python37-pandas:1</code> BOOM , Thanks Mate.</p>
+<h5 id="use-your-own-layer">use your own layer</h5>
+<p>Security Issues ?, To create our own layer , we need another AWS machine ( EC2).
+Login to another EC2 machine and follow these steps:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">python --version
+Python 3.6.8
+
+<span class="c1"># https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html</span>
+<span class="c1"># python 3.6 uses Amazon Linux currently</span> 
+
+mkdir project
+<span class="nb">cd</span> project
+virtualenv v-env
+<span class="nb">source</span> ./v-env/bin/activate
+pip install pandas
+deactivate
+
+<span class="c1"># creating layer</span>
+<span class="c1"># https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html#configuration-layers-path</span>
+mkdir python
+<span class="nb">cd</span> python
+
+
+cp -r ../v-env/lib/python3.6/site-packages/* .
+<span class="nb">cd</span> ..
+zip -r panda_layer.zip python
+</code></pre></div><p>This will create a zip file which include pandas , as installed natively in a weird AWS machine.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">ubuntu@ip:~/project$ <span class="nb">cd</span> ~/.aws/
+ubuntu@ip:~/.aws$ ls
+config  credentials  credentials_prod
+ubuntu@ip:~/.aws$ cp credentials credentials_dev
+ubuntu@ip:~/.aws$ aws configure
+AWS Access Key ID <span class="o">[</span>****************VF5Q<span class="o">]</span>: *********AWS Id ************
+AWS Secret Access Key <span class="o">[</span>****************hco4<span class="o">]</span>: *********AWS access key ************
+Default region name <span class="o">[</span>us-east-1<span class="o">]</span>:
+Default output format <span class="o">[</span>json<span class="o">]</span>:
+</code></pre></div><p>Here, we make our AWS credential compatible.
+Now we have a zip containing dependency and our AWS account is connected. As suggested by one stackoverflow answer.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">
+aws lambda publish-layer-version --layer-name pandas --zip-file fileb://panda_layer.zip --compatible-runtimes python3.6
+</code></pre></div><p>But it didnt, so Our DevOps engineer finds a hack to deploy this as a layer.
+We first push the zip file to a S3 bucket and then publish the layer from there.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">aws s3 cp layer.zip s3://<span class="o">{{</span>bucket_name<span class="o">}}</span>/layer.zip
+aws lambda publish-layer-version --layer-name my-layer --description <span class="s2">&#34;My layer&#34;</span> --license-info <span class="s2">&#34;MIT&#34;</span> --content <span class="nv">S3Bucket</span><span class="o">={{</span>bucket-name<span class="o">}}</span>,S3Key<span class="o">=</span>layer.zip --compatible-runtimes python3.6 python3.7 python3.8
+</code></pre></div><p>yeah, owning one own layer is hard, But we already have two other alternatives.</p>
+<h3 id="step-6">Step 6</h3>
+<p>Run,
+you could test the model, some database dependency like redis and mongodb should be abale to communicate with AWS lambda otherwise it wont work.
+But Once you do that, it will surely work and you will see the bueaty.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">REPORT RequestId: 5b9ce656-c38c-43c8-9187-515872598c61	Duration: 3003.21 ms	Billed Duration: <span class="m">3000</span> ms	Memory Size: <span class="m">192</span> MB	Max Memory Used: <span class="m">142</span> MB	Init Duration: 2202.47 ms	
+</code></pre></div><p>You will only get billed for the time you ran for.
+You could limit the resources, see Memory size and Max Memory used.</p>
+<p>I hope the stats are convincing enough to adopt Lambda function instead a buying bulky Instances.</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2020-06-11</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://shekharkoirala.github.io/posts/lambda_function_python/" data-title="AWS Lambda function for Data Scientist using Python." data-via="shekhar_koirala" data-hashtags="Blog"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://shekharkoirala.github.io/posts/lambda_function_python/" data-hashtag="Blog"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="http://shekharkoirala.github.io/posts/lambda_function_python/" data-title="AWS Lambda function for Data Scientist using Python." data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://shekharkoirala.github.io/posts/lambda_function_python/" data-title="AWS Lambda function for Data Scientist using Python."><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://shekharkoirala.github.io/posts/lambda_function_python/" data-title="AWS Lambda function for Data Scientist using Python."><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="http://shekharkoirala.github.io/posts/lambda_function_python/" data-title="AWS Lambda function for Data Scientist using Python." data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="http://shekharkoirala.github.io/posts/lambda_function_python/" data-title="AWS Lambda function for Data Scientist using Python." data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="http://shekharkoirala.github.io/posts/lambda_function_python/" data-title="AWS Lambda function for Data Scientist using Python."><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/blog/">Blog</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/first_post/" class="prev" rel="prev" title="Create your own Blog Post"><i class="fas fa-angle-left fa-fw"></i>Create your own Blog Post</a></div>
+</div>
+<div id="comments"><div id="fb-root" class="comment"></div>
+            <div
+                class="fb-comments"
+                data-href="http://shekharkoirala.github.io/posts/lambda_function_python/"
+                data-width="100%"
+                data-numposts="10"
+            ></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://developers.facebook.com/docs/plugins/comments/"></a>Facebook</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.71.1">Hugo</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v5.0&amp;appId=471929413608305&amp;autoLogAppEvents=1" defer></script><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"U6XJHKMGSL","algoliaIndex":"personalBlog","algoliaSearchKey":"984e71223e126119578f0e81c8f9d7a9","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'UA-168093774-1', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-168093774-1" async></script></body>
+</html>
