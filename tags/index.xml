@@ -1,14 +1,41 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Tags - Tag - Shekhar</title>
-        <link>http://shekharkoirala.github.io/tags/</link>
-        <description>Tags - Tag - Shekhar</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 11 Jun 2020 14:35:28 &#43;0545</lastBuildDate><atom:link href="http://shekharkoirala.github.io/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>Blog</title>
-    <link>http://shekharkoirala.github.io/tags/blog/</link>
-    <pubDate>Thu, 11 Jun 2020 14:35:28 &#43;0545</pubDate>
-    <author>Author</author>
-    <guid>http://shekharkoirala.github.io/tags/blog/</guid>
-    <description><![CDATA[]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on shekhar</title>
+    <link>http://shekharkoirala.github.io/tags/</link>
+    <description>Recent content in Tags on shekhar</description>
+    <image>
+      <url>http://shekharkoirala.github.io/papermod-cover.png</url>
+      <link>http://shekharkoirala.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 14 Apr 2022 22:12:46 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Master&#39;s</title>
+      <link>http://shekharkoirala.github.io/tags/masters/</link>
+      <pubDate>Thu, 14 Apr 2022 22:12:46 +0100</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/tags/masters/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OMSCS</title>
+      <link>http://shekharkoirala.github.io/tags/omscs/</link>
+      <pubDate>Thu, 14 Apr 2022 22:12:46 +0100</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/tags/omscs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>http://shekharkoirala.github.io/tags/blog/</link>
+      <pubDate>Thu, 11 Jun 2020 14:35:28 +0545</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
 </rss>

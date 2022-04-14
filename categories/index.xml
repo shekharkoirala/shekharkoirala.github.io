@@ -1,14 +1,32 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Categories - Category - Shekhar</title>
-        <link>http://shekharkoirala.github.io/categories/</link>
-        <description>Categories - Category - Shekhar</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 11 Jun 2020 14:35:28 &#43;0545</lastBuildDate><atom:link href="http://shekharkoirala.github.io/categories/" rel="self" type="application/rss+xml" /><item>
-    <title>Random</title>
-    <link>http://shekharkoirala.github.io/categories/random/</link>
-    <pubDate>Thu, 11 Jun 2020 14:35:28 &#43;0545</pubDate>
-    <author>Author</author>
-    <guid>http://shekharkoirala.github.io/categories/random/</guid>
-    <description><![CDATA[]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on shekhar</title>
+    <link>http://shekharkoirala.github.io/categories/</link>
+    <description>Recent content in Categories on shekhar</description>
+    <image>
+      <url>http://shekharkoirala.github.io/papermod-cover.png</url>
+      <link>http://shekharkoirala.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 14 Apr 2022 22:12:46 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Random</title>
+      <link>http://shekharkoirala.github.io/categories/random/</link>
+      <pubDate>Thu, 14 Apr 2022 22:12:46 +0100</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/categories/random/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Studies</title>
+      <link>http://shekharkoirala.github.io/categories/studies/</link>
+      <pubDate>Thu, 14 Apr 2022 22:12:46 +0100</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/categories/studies/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
 </rss>

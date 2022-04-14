@@ -1,30 +1,60 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Shekhar</title>
-        <link>http://shekharkoirala.github.io/</link>
-        <description>Personal Blog / Scribbles</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 11 Jun 2020 14:35:28 &#43;0545</lastBuildDate>
-            <atom:link href="http://shekharkoirala.github.io/index.xml" rel="self" type="application/rss+xml" />
-        <item>
-    <title>AWS Lambda function for Data Scientist using Python.</title>
-    <link>http://shekharkoirala.github.io/posts/lambda_function_python/</link>
-    <pubDate>Thu, 11 Jun 2020 14:35:28 &#43;0545</pubDate>
-    <author>Author</author>
-    <guid>http://shekharkoirala.github.io/posts/lambda_function_python/</guid>
-    <description><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>The post is a quick guide on &ldquo;How we could use AWS lambda services to deploy some standalone task&rdquo;. This is really helpful when we dont have to buy instances for such task. By using word task, I mean scripts, that could scrap data, or a cron job data aggregator. The BEST thing about the cron job is that , it is way cheaper. A million hits by lambda function is Free in AWS.</p>]]></description>
-</item><item>
-    <title>Create your own Blog Post</title>
-    <link>http://shekharkoirala.github.io/posts/first_post/</link>
-    <pubDate>Sun, 31 May 2020 14:17:54 &#43;0545</pubDate>
-    <author>Author</author>
-    <guid>http://shekharkoirala.github.io/posts/first_post/</guid>
-    <description><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>I want to create a Blog. But there are some conditions that I want:</p>
-<ol>
-<li>Easy/simple to create</li>
-<li>The UI should match my style.</li>
-<li>Based on Git, for future reference.</li>
-</ol>]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>shekhar</title>
+    <link>http://shekharkoirala.github.io/</link>
+    <description>Recent content on shekhar</description>
+    <image>
+      <url>http://shekharkoirala.github.io/papermod-cover.png</url>
+      <link>http://shekharkoirala.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 14 Apr 2022 22:12:46 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oh my OMSCS</title>
+      <link>http://shekharkoirala.github.io/posts/omscs/</link>
+      <pubDate>Thu, 14 Apr 2022 22:12:46 +0100</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/posts/omscs/</guid>
+      <description>Yeah, I joined OMSCS But wait, Now what ?</description>
+    </item>
+    
+    <item>
+      <title>AWS Lambda function for Data Scientist using Python.</title>
+      <link>http://shekharkoirala.github.io/posts/lambda_function_python/</link>
+      <pubDate>Thu, 11 Jun 2020 14:35:28 +0545</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/posts/lambda_function_python/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The post is a quick guide on &amp;ldquo;How we could use AWS lambda services to deploy some standalone task&amp;rdquo;. This is really helpful when we dont have to buy instances for such task. By using word task, I mean scripts, that could scrap data, or a cron job data aggregator. The BEST thing about the cron job is that , it is way cheaper. A million hits by lambda function is Free in AWS.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Create your own Blog Post</title>
+      <link>http://shekharkoirala.github.io/posts/first_post/</link>
+      <pubDate>Sun, 31 May 2020 14:17:54 +0545</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/posts/first_post/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;I want to create a Blog. But there are some conditions that I want:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Easy/simple to create&lt;/li&gt;
+&lt;li&gt;The UI should match my style.&lt;/li&gt;
+&lt;li&gt;Based on Git, for future reference.&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>shekhar koirala</title>
+      <link>http://shekharkoirala.github.io/about/</link>
+      <pubDate>Sun, 31 May 2020 14:17:54 +0545</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/about/</guid>
+      <description>Work Machine Learning Engineer : Identv
+Education Electronics and Communication Engineer - IOE, Thapathali Campus</description>
+    </item>
+    
+    
+    
+  </channel>
 </rss>

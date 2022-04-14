@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Studies on shekhar</title>
+    <link>http://shekharkoirala.github.io/categories/studies/</link>
+    <description>Recent content in Studies on shekhar</description>
+    <image>
+      <url>http://shekharkoirala.github.io/papermod-cover.png</url>
+      <link>http://shekharkoirala.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 14 Apr 2022 22:12:46 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/categories/studies/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oh my OMSCS</title>
+      <link>http://shekharkoirala.github.io/posts/omscs/</link>
+      <pubDate>Thu, 14 Apr 2022 22:12:46 +0100</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/posts/omscs/</guid>
+      <description>Yeah, I joined OMSCS But wait, Now what ?</description>
+    </item>
+    
+  </channel>
+</rss>
