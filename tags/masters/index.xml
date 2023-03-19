@@ -5,7 +5,6 @@
     <link>http://shekharkoirala.github.io/tags/masters/</link>
     <description>Recent content in Master&#39;s on shekhar</description>
     <image>
-      <title>shekhar</title>
       <url>http://shekharkoirala.github.io/papermod-cover.png</url>
       <link>http://shekharkoirala.github.io/papermod-cover.png</link>
     </image>
@@ -17,7 +16,8 @@
       <pubDate>Thu, 14 Apr 2022 22:12:46 +0100</pubDate>
       
       <guid>http://shekharkoirala.github.io/posts/omscs/</guid>
-      <description>Yeah, I joined OMSCS But wait, Now what ?</description>
+      <description>Yeah, I joined OMSCS But wait, Now what ?
+  </description>
     </item>
     
   </channel>
