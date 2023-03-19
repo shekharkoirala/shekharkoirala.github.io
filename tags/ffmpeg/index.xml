@@ -5,6 +5,10 @@
     <link>http://shekharkoirala.github.io/tags/ffmpeg/</link>
     <description>Recent content in ffmpeg on shekhar</description>
     <image>
+<<<<<<< HEAD
+=======
+      <title>shekhar</title>
+>>>>>>> 07ace75c63f7e4f854237464966157327940b13f
       <url>http://shekharkoirala.github.io/papermod-cover.png</url>
       <link>http://shekharkoirala.github.io/papermod-cover.png</link>
     </image>
@@ -17,8 +21,13 @@
       
       <guid>http://shekharkoirala.github.io/posts/fury_ffmpeg/</guid>
       <description>ffmpeg Recipes A list of useful receipes when using ffmpeg. A dump for future references.
+<<<<<<< HEAD
   Extract frames from video:
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #!/bin/zsh # Find all .mp4 files in the current directory and store them in an array input_files=(*.mp4) # Loop through each input file for input_file in &amp;#34;${input_files[@]}&amp;#34; do # Get the path to the input file directory input_dir=&amp;#34;$(dirname &amp;#34;$input_file&amp;#34;)&amp;#34; # Create a folder for the input file images in the same directory as the input file folder_name=&amp;#34;${input_file%.</description>
+=======
+Extract frames from video:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 #!/bin/zsh # Find all .mp4 files in the current directory and store them in an array input_files=(*.mp4) # Loop through each input file for input_file in &amp;#34;${input_files[@]}&amp;#34; do # Get the path to the input file directory input_dir=&amp;#34;$(dirname &amp;#34;$input_file&amp;#34;)&amp;#34; # Create a folder for the input file images in the same directory as the input file folder_name=&amp;#34;${input_file%.</description>
+>>>>>>> 07ace75c63f7e4f854237464966157327940b13f
     </item>
     
   </channel>
