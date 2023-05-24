@@ -9,7 +9,19 @@
       <link>http://shekharkoirala.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 06 Mar 2023 22:49:00 +0000</lastBuildDate><atom:link href="http://shekharkoirala.github.io/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 May 2023 22:07:46 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fujifilm_as_webcam</title>
+      <link>http://shekharkoirala.github.io/posts/fujifilm_as_webcam/</link>
+      <pubDate>Wed, 24 May 2023 22:07:46 +0100</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/posts/fujifilm_as_webcam/</guid>
+      <description>How to use your XT1/2/3/4 fujifilm camera as webcam for your ubuntu 22.04. This is a simple guide to use your fujifilm camera as a webcam.
+Installation: 1  sudo apt-get install gphoto2 v4l2loopback-utils v4l2loopback-dkms ffmpeg   modprobe setup
+1 2 3  sudo modprobe -r v4l2loopback sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2   check video sources
+1  ls -l /dev/video*   Make sure there is no gphoto process already running:</description>
+    </item>
+    
     <item>
       <title>Fast Fury and Fantastic .... The ffmpeg</title>
       <link>http://shekharkoirala.github.io/posts/fury_ffmpeg/</link>

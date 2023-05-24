@@ -37,7 +37,7 @@
   Extract frames from video:
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #!/bin/zsh # Find all .mp4 files in the current directory and store them in an array input_files=(*.mp4) # Loop through each input file for input_file in &#34;${input_files[@]}&#34; do # Get the path to the input file directory input_dir=&#34;$(dirname &#34;$input_file&#34;)&#34; # Create a folder for the input file images in the same directory as the input file folder_name=&#34;${input_file%.">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"http://shekharkoirala.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Fast Fury and Fantastic .... The ffmpeg","item":"http://shekharkoirala.github.io/posts/fury_ffmpeg/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Fast Fury and Fantastic .... The ffmpeg","name":"Fast Fury and Fantastic .... The ffmpeg","description":"ffmpeg Recipes A list of useful receipes when using ffmpeg. A dump for future references.\n  Extract frames from video:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #!/bin/zsh # Find all .mp4 files in the current directory and store them in an array input_files=(*.mp4) # Loop through each input file for input_file in \u0026#34;${input_files[@]}\u0026#34; do # Get the path to the input file directory input_dir=\u0026#34;$(dirname \u0026#34;$input_file\u0026#34;)\u0026#34; # Create a folder for the input file images in the same directory as the input file folder_name=\u0026#34;${input_file%.","keywords":["ffmpeg","developer","video"],"articleBody":"ffmpeg Recipes A list of useful receipes when using ffmpeg. A dump for future references.\n  Extract frames from video:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #!/bin/zsh # Find all .mp4 files in the current directory and store them in an array input_files=(*.mp4) # Loop through each input file for input_file in \"${input_files[@]}\" do # Get the path to the input file directory input_dir=\"$(dirname \"$input_file\")\" # Create a folder for the input file images in the same directory as the input file folder_name=\"${input_file%.*}_images\" output_dir=\"$input_dir/$folder_name\" mkdir -p \"$output_dir\" # Extract images from the input file and save them to the folder ffmpeg -i \"$input_file\" -r 1 \"$output_dir/output_%03d.png\" done     convert .h265 video to .h264\n  ","wordCount":"124","inLanguage":"en","datePublished":"2023-03-06T22:49:00Z","dateModified":"2023-03-06T22:49:00Z","author":{"@type":"Person","name":"shekhar"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://shekharkoirala.github.io/posts/fury_ffmpeg/"},"publisher":{"@type":"Organization","name":"shekhar","logo":{"@type":"ImageObject","url":"http://shekharkoirala.github.io/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Fast Fury and Fantastic .... The ffmpeg","name":"Fast Fury and Fantastic .... The ffmpeg","description":"ffmpeg Recipes A list of useful receipes when using ffmpeg. A dump for future references.\n  Extract frames from video:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #!/bin/zsh # Find all .mp4 files in the current directory and store them in an array input_files=(*.mp4) # Loop through each input file for input_file in \u0026#34;${input_files[@]}\u0026#34; do # Get the path to the input file directory input_dir=\u0026#34;$(dirname \u0026#34;$input_file\u0026#34;)\u0026#34; # Create a folder for the input file images in the same directory as the input file folder_name=\u0026#34;${input_file%.","keywords":["ffmpeg","developer","video"],"articleBody":"ffmpeg Recipes A list of useful receipes when using ffmpeg. A dump for future references.\n  Extract frames from video:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #!/bin/zsh # Find all .mp4 files in the current directory and store them in an array input_files=(*.mp4) # Loop through each input file for input_file in \"${input_files[@]}\" do # Get the path to the input file directory input_dir=\"$(dirname \"$input_file\")\" # Create a folder for the input file images in the same directory as the input file folder_name=\"${input_file%.*}_images\" output_dir=\"$input_dir/$folder_name\" mkdir -p \"$output_dir\" # Extract images from the input file and save them to the folder ffmpeg -i \"$input_file\" -r 1 \"$output_dir/output_%03d.png\" done     combine video.mp4 and audio.mp4 to a single video.\n1  ffmpeg -i video.mp4 -i audio.mp4 -c copy -map 0:0 -map 1:1 -shortest combined.mp4     convert .h265 video to .h264\n1  ffmpeg -i video1.mov -vcodec h264 -acodec mp2 video1.mp4     ","wordCount":"155","inLanguage":"en","datePublished":"2023-03-06T22:49:00Z","dateModified":"2023-03-06T22:49:00Z","author":{"@type":"Person","name":"shekhar"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://shekharkoirala.github.io/posts/fury_ffmpeg/"},"publisher":{"@type":"Organization","name":"shekhar","logo":{"@type":"ImageObject","url":"http://shekharkoirala.github.io/favicon.ico"}}}</script>
 </head>
 <body class=dark id=top>
 <script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
@@ -88,7 +88,19 @@ Fast Fury and Fantastic .... The ffmpeg
 </h1>
 <div class=post-meta><span title="2023-03-06 22:49:00 +0000 UTC">March 6, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;shekhar&nbsp;|&nbsp;<a href=mailto:shekharkoirala4@gmail.com rel="noopener noreferrer" target=_blank>Suggest Changes</a>
 </div>
-</header>
+</header> <div class=toc>
+<details open>
+<summary accesskey=c title="(Alt + C)">
+<span class=details>Table of Contents</span>
+</summary>
+<div class=inner><ul>
+<li>
+<a href=#ffmpeg-recipes aria-label="ffmpeg Recipes">ffmpeg Recipes</a>
+</li>
+</ul>
+</div>
+</details>
+</div>
 <div class=post-content><h3 id=ffmpeg-recipes>ffmpeg Recipes<a hidden class=anchor aria-hidden=true href=#ffmpeg-recipes>#</a></h3>
 <p>A list of useful receipes when using ffmpeg. A dump for future references.</p>
 <ol>
@@ -140,8 +152,27 @@ Fast Fury and Fantastic .... The ffmpeg
 </div>
 </div></li>
 <li>
+<p>combine video.mp4 and audio.mp4 to a single video.</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-shell data-lang=shell>ffmpeg -i video.mp4 -i audio.mp4 -c copy -map 0:0 -map 1:1 -shortest combined.mp4
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
 <p>convert .h265 video to .h264</p>
-</li>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-shell data-lang=shell>ffmpeg -i video1.mov -vcodec h264 -acodec mp2 video1.mp4
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ol>
 </div>
 <footer class=post-footer>
