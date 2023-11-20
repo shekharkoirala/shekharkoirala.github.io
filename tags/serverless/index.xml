@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>serverless on shekhar</title>
+    <link>http://shekharkoirala.github.io/tags/serverless/</link>
+    <description>Recent content in serverless on shekhar</description>
+    <image>
+      <url>http://shekharkoirala.github.io/papermod-cover.png</url>
+      <link>http://shekharkoirala.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 20 Nov 2023 21:43:18 +0000</lastBuildDate><atom:link href="http://shekharkoirala.github.io/tags/serverless/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Terraform_aws_python</title>
+      <link>http://shekharkoirala.github.io/posts/terraform_aws_python/</link>
+      <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/posts/terraform_aws_python/</guid>
+      <description>This is based on a workshop on Pycon Ireland 2023 given by : Pavlo Tishkin
+ Setup AWS account Setup AWS CLI Setup Terraform Setup Python Setup AWS credentials Setup AWS S3 bucket Setup AWS Lambda function Setup AWS CloudWatch event Setup AWS IAM role Setup AWS IAM policy setup lamda function  &amp;laquo; updating soon&amp;raquo;</description>
+    </item>
+    
+  </channel>
+</rss>

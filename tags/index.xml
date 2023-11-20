@@ -9,7 +9,115 @@
       <link>http://shekharkoirala.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 24 May 2023 22:07:46 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Nov 2023 21:43:18 +0000</lastBuildDate><atom:link href="http://shekharkoirala.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS</title>
+      <link>http://shekharkoirala.github.io/tags/aws/</link>
+      <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloudwatch</title>
+      <link>http://shekharkoirala.github.io/tags/cloudwatch/</link>
+      <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/tags/cloudwatch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lambda</title>
+      <link>http://shekharkoirala.github.io/tags/lambda/</link>
+      <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/tags/lambda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>http://shekharkoirala.github.io/tags/python/</link>
+      <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>s3</title>
+      <link>http://shekharkoirala.github.io/tags/s3/</link>
+      <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/tags/s3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>serverless</title>
+      <link>http://shekharkoirala.github.io/tags/serverless/</link>
+      <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/tags/serverless/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Terraform</title>
+      <link>http://shekharkoirala.github.io/tags/terraform/</link>
+      <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/tags/terraform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AEB</title>
+      <link>http://shekharkoirala.github.io/tags/aeb/</link>
+      <pubDate>Wed, 13 Sep 2023 11:43:23 +0100</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/tags/aeb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>camera</title>
+      <link>http://shekharkoirala.github.io/tags/camera/</link>
+      <pubDate>Wed, 13 Sep 2023 11:43:23 +0100</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/tags/camera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HDR</title>
+      <link>http://shekharkoirala.github.io/tags/hdr/</link>
+      <pubDate>Wed, 13 Sep 2023 11:43:23 +0100</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/tags/hdr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>luminance</title>
+      <link>http://shekharkoirala.github.io/tags/luminance/</link>
+      <pubDate>Wed, 13 Sep 2023 11:43:23 +0100</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/tags/luminance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software</title>
+      <link>http://shekharkoirala.github.io/tags/software/</link>
+      <pubDate>Wed, 13 Sep 2023 11:43:23 +0100</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/tags/software/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>fujfilm</title>
       <link>http://shekharkoirala.github.io/tags/fujfilm/</link>

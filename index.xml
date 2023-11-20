@@ -9,7 +9,27 @@
       <link>http://shekharkoirala.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 24 May 2023 22:07:46 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Nov 2023 21:43:18 +0000</lastBuildDate><atom:link href="http://shekharkoirala.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Terraform_aws_python</title>
+      <link>http://shekharkoirala.github.io/posts/terraform_aws_python/</link>
+      <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/posts/terraform_aws_python/</guid>
+      <description>This is based on a workshop on Pycon Ireland 2023 given by : Pavlo Tishkin
+ Setup AWS account Setup AWS CLI Setup Terraform Setup Python Setup AWS credentials Setup AWS S3 bucket Setup AWS Lambda function Setup AWS CloudWatch event Setup AWS IAM role Setup AWS IAM policy setup lamda function  &amp;laquo; updating soon&amp;raquo;</description>
+    </item>
+    
+    <item>
+      <title>Install_luminance_ubuntu</title>
+      <link>http://shekharkoirala.github.io/posts/install_luminance_ubuntu/</link>
+      <pubDate>Wed, 13 Sep 2023 11:43:23 +0100</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/posts/install_luminance_ubuntu/</guid>
+      <description>How to install luminance HDR in ubuntu  install dependecies  1  sudo apt install -y qtcreator qtbase5-dev qt5-qmake cmake libexiv2-dev libtiff-dev libraw-dev libpng-dev libjpeg-dev libopenexr-dev libfftw3-dev libboost-all-dev libcfitsio-dev libgsl-dev   This command installs the following dependencies:
+ QT5 development tools exiv2 library libtiff library libraw library libpng library libjpeg library libopenexr library fftw3 library libboost library cfitsio library Gnu Gsl library  sudo apt install qttools5-dev sudo apt-get install qttools5-dev-tools sudo apt install libqt5webkit5-dev sudo apt-get install libqt5svg5-dev sudo apt-get install libeigen3-dev</description>
+    </item>
+    
     <item>
       <title>Fujifilm_as_webcam</title>
       <link>http://shekharkoirala.github.io/posts/fujifilm_as_webcam/</link>
