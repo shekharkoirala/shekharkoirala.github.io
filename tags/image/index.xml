@@ -11,12 +11,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 04 May 2024 14:49:57 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/tags/image/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Image_clustering_intro</title>
+      <title>Case study: Automated Image Clustering for E-commerce company</title>
       <link>http://shekharkoirala.github.io/posts/image_clustering_intro/</link>
       <pubDate>Sat, 04 May 2024 14:49:57 +0100</pubDate>
       
       <guid>http://shekharkoirala.github.io/posts/image_clustering_intro/</guid>
-      <description>Image Clustering There are multiple paradigms of supervised machine learning, such as classification, object detection, and segmentation, among others. There are many robust supervised algorithms; however, to achieve high accuracy, we need labeled data, which is costly and time-consuming. Clustering is an unsupervised learning technique that can be applied to unlabeled datasets. It is one of the most interesting and challenging problems in the field of computer vision. The goal of image clustering is to group similar images together in the same cluster.</description>
+      <description>Background In this case study, Artificial Intelligence based system is used to take buisness decisions. The study is based on a e-commerce company which ingest lots of data like images, quarterly reports, invoices, customer feedbacks, customer reviews with images, etc. It would be great if this large amount of data is automatically categorized or grouped together. Previously, a machine learning team in the company had created a model to classify the input data.</description>
     </item>
     
   </channel>
