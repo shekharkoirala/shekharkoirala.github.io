@@ -9,9 +9,28 @@
       <link>http://shekharkoirala.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 04 May 2024 14:49:57 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Fri, 16 Aug 2024 10:56:06 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>clustering</title>
+      <title>Installation</title>
+      <link>http://shekharkoirala.github.io/categories/installation/</link>
+      <pubDate>Fri, 16 Aug 2024 10:56:06 +0100</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/categories/installation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nvidia</title>
+      <link>http://shekharkoirala.github.io/categories/nvidia/</link>
+      <pubDate>Fri, 16 Aug 2024 10:56:06 +0100</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/categories/nvidia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clustering</title>
       <link>http://shekharkoirala.github.io/categories/clustering/</link>
       <pubDate>Sat, 04 May 2024 14:49:57 +0100</pubDate>
       
@@ -29,7 +48,7 @@
     </item>
     
     <item>
-      <title>data</title>
+      <title>Data</title>
       <link>http://shekharkoirala.github.io/categories/data/</link>
       <pubDate>Sun, 07 Apr 2024 20:53:30 +0100</pubDate>
       
@@ -38,7 +57,7 @@
     </item>
     
     <item>
-      <title>aws</title>
+      <title>Aws</title>
       <link>http://shekharkoirala.github.io/categories/aws/</link>
       <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
       
@@ -47,7 +66,7 @@
     </item>
     
     <item>
-      <title>cloud</title>
+      <title>Cloud</title>
       <link>http://shekharkoirala.github.io/categories/cloud/</link>
       <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
       
@@ -56,7 +75,7 @@
     </item>
     
     <item>
-      <title>python</title>
+      <title>Python</title>
       <link>http://shekharkoirala.github.io/categories/python/</link>
       <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
       
@@ -65,7 +84,7 @@
     </item>
     
     <item>
-      <title>terraform</title>
+      <title>Terraform</title>
       <link>http://shekharkoirala.github.io/categories/terraform/</link>
       <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
       
@@ -74,7 +93,7 @@
     </item>
     
     <item>
-      <title>photography</title>
+      <title>Photography</title>
       <link>http://shekharkoirala.github.io/categories/photography/</link>
       <pubDate>Wed, 13 Sep 2023 11:43:23 +0100</pubDate>
       
@@ -83,7 +102,7 @@
     </item>
     
     <item>
-      <title>software</title>
+      <title>Software</title>
       <link>http://shekharkoirala.github.io/categories/software/</link>
       <pubDate>Wed, 13 Sep 2023 11:43:23 +0100</pubDate>
       
@@ -92,7 +111,7 @@
     </item>
     
     <item>
-      <title>tools</title>
+      <title>Tools</title>
       <link>http://shekharkoirala.github.io/categories/tools/</link>
       <pubDate>Wed, 13 Sep 2023 11:43:23 +0100</pubDate>
       

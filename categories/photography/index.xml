@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>photography on shekhar</title>
+    <title>Photography on shekhar</title>
     <link>http://shekharkoirala.github.io/categories/photography/</link>
-    <description>Recent content in photography on shekhar</description>
+    <description>Recent content in Photography on shekhar</description>
     <image>
       <url>http://shekharkoirala.github.io/papermod-cover.png</url>
       <link>http://shekharkoirala.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Wed, 13 Sep 2023 11:43:23 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/categories/photography/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install_luminance_ubuntu</title>
@@ -16,8 +17,8 @@
       <pubDate>Wed, 13 Sep 2023 11:43:23 +0100</pubDate>
       
       <guid>http://shekharkoirala.github.io/posts/install_luminance_ubuntu/</guid>
-      <description>How to install luminance HDR in ubuntu  install dependecies  1  sudo apt install -y qtcreator qtbase5-dev qt5-qmake cmake libexiv2-dev libtiff-dev libraw-dev libpng-dev libjpeg-dev libopenexr-dev libfftw3-dev libboost-all-dev libcfitsio-dev libgsl-dev   This command installs the following dependencies:
- QT5 development tools exiv2 library libtiff library libraw library libpng library libjpeg library libopenexr library fftw3 library libboost library cfitsio library Gnu Gsl library  sudo apt install qttools5-dev sudo apt-get install qttools5-dev-tools sudo apt install libqt5webkit5-dev sudo apt-get install libqt5svg5-dev sudo apt-get install libeigen3-dev</description>
+      <description>How to install luminance HDR in ubuntu install dependecies 1 sudo apt install -y qtcreator qtbase5-dev qt5-qmake cmake libexiv2-dev libtiff-dev libraw-dev libpng-dev libjpeg-dev libopenexr-dev libfftw3-dev libboost-all-dev libcfitsio-dev libgsl-dev This command installs the following dependencies:
+QT5 development tools exiv2 library libtiff library libraw library libpng library libjpeg library libopenexr library fftw3 library libboost library cfitsio library Gnu Gsl library sudo apt install qttools5-dev sudo apt-get install qttools5-dev-tools sudo apt install libqt5webkit5-dev sudo apt-get install libqt5svg5-dev sudo apt-get install libeigen3-dev</description>
     </item>
     
     <item>
@@ -27,9 +28,10 @@
       
       <guid>http://shekharkoirala.github.io/posts/fujifilm_as_webcam/</guid>
       <description>How to use your XT1/2/3/4 fujifilm camera as webcam for your ubuntu 22.04. This is a simple guide to use your fujifilm camera as a webcam.
-Installation: 1  sudo apt-get install gphoto2 v4l2loopback-utils v4l2loopback-dkms ffmpeg   modprobe setup
-1 2 3  sudo modprobe -r v4l2loopback sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2   check video sources
-1  ls -l /dev/video*   Make sure there is no gphoto process already running:</description>
+Installation: 1 sudo apt-get install gphoto2 v4l2loopback-utils v4l2loopback-dkms ffmpeg modprobe setup
+1 2 3 sudo modprobe -r v4l2loopback sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2 check video sources
+1 ls -l /dev/video* Make sure there is no gphoto process already running:
+1 ps aux | grep gphoto check is camera is detected by gphoto2:</description>
     </item>
     
   </channel>

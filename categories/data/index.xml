@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>data on shekhar</title>
+    <title>Data on shekhar</title>
     <link>http://shekharkoirala.github.io/categories/data/</link>
-    <description>Recent content in data on shekhar</description>
+    <description>Recent content in Data on shekhar</description>
     <image>
       <url>http://shekharkoirala.github.io/papermod-cover.png</url>
       <link>http://shekharkoirala.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Sun, 07 Apr 2024 20:53:30 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/categories/data/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data_sourcing_ml</title>

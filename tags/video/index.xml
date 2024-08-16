@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>video on shekhar</title>
+    <title>Video on shekhar</title>
     <link>http://shekharkoirala.github.io/tags/video/</link>
-    <description>Recent content in video on shekhar</description>
+    <description>Recent content in Video on shekhar</description>
     <image>
       <url>http://shekharkoirala.github.io/papermod-cover.png</url>
       <link>http://shekharkoirala.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Wed, 24 May 2023 22:07:46 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/tags/video/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fujifilm_as_webcam</title>
@@ -17,9 +18,10 @@
       
       <guid>http://shekharkoirala.github.io/posts/fujifilm_as_webcam/</guid>
       <description>How to use your XT1/2/3/4 fujifilm camera as webcam for your ubuntu 22.04. This is a simple guide to use your fujifilm camera as a webcam.
-Installation: 1  sudo apt-get install gphoto2 v4l2loopback-utils v4l2loopback-dkms ffmpeg   modprobe setup
-1 2 3  sudo modprobe -r v4l2loopback sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2   check video sources
-1  ls -l /dev/video*   Make sure there is no gphoto process already running:</description>
+Installation: 1 sudo apt-get install gphoto2 v4l2loopback-utils v4l2loopback-dkms ffmpeg modprobe setup
+1 2 3 sudo modprobe -r v4l2loopback sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2 check video sources
+1 ls -l /dev/video* Make sure there is no gphoto process already running:
+1 ps aux | grep gphoto check is camera is detected by gphoto2:</description>
     </item>
     
     <item>
@@ -29,8 +31,8 @@ Installation: 1  sudo apt-get install gphoto2 v4l2loopback-utils v4l2loopback-dk
       
       <guid>http://shekharkoirala.github.io/posts/fury_ffmpeg/</guid>
       <description>ffmpeg Recipes A list of useful receipes when using ffmpeg. A dump for future references.
-  Extract frames from video:
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #!/bin/zsh # Find all .mp4 files in the current directory and store them in an array input_files=(*.mp4) # Loop through each input file for input_file in &amp;#34;${input_files[@]}&amp;#34; do # Get the path to the input file directory input_dir=&amp;#34;$(dirname &amp;#34;$input_file&amp;#34;)&amp;#34; # Create a folder for the input file images in the same directory as the input file folder_name=&amp;#34;${input_file%.</description>
+Extract frames from video:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 #!/bin/zsh # Find all .mp4 files in the current directory and store them in an array input_files=(*.mp4) # Loop through each input file for input_file in &amp;#34;${input_files[@]}&amp;#34; do # Get the path to the input file directory input_dir=&amp;#34;$(dirname &amp;#34;$input_file&amp;#34;)&amp;#34; # Create a folder for the input file images in the same directory as the input file folder_name=&amp;#34;${input_file%.</description>
     </item>
     
   </channel>

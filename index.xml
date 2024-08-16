@@ -9,7 +9,17 @@
       <link>http://shekharkoirala.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 04 May 2024 14:49:57 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Fri, 16 Aug 2024 10:56:06 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nvidia_cuda_ubuntu1</title>
+      <link>http://shekharkoirala.github.io/posts/nvidia_cuda_ubuntu1/</link>
+      <pubDate>Fri, 16 Aug 2024 10:56:06 +0100</pubDate>
+      
+      <guid>http://shekharkoirala.github.io/posts/nvidia_cuda_ubuntu1/</guid>
+      <description>MOTIVE So, Ubuntu 24.04 LTS was released on 25 April 2024. Its been more 3 months from the release and I thought it would be safe enough to install it in my main working computer. Wrong!! I wanted a documentation for setting up the CUDA 12.2 in Ubuntu 24.04 but ended for reinstalling everything. Thus, here is the blog for future me to setup everything. Thanks to all the great help I found in the Internet [ referenced as links ].</description>
+    </item>
+    
     <item>
       <title>Case study: Automated Image Clustering for E-commerce company</title>
       <link>http://shekharkoirala.github.io/posts/image_clustering_intro/</link>
@@ -35,7 +45,7 @@
       
       <guid>http://shekharkoirala.github.io/posts/terraform_aws_python/</guid>
       <description>This is based on a workshop on Pycon Ireland 2023 given by : Pavlo Tishkin
- Setup AWS account Setup AWS CLI Setup Terraform Setup Python Setup AWS credentials Setup AWS S3 bucket Setup AWS Lambda function Setup AWS CloudWatch event Setup AWS IAM role Setup AWS IAM policy setup lamda function  &amp;laquo; updating soon&amp;raquo;</description>
+Setup AWS account Setup AWS CLI Setup Terraform Setup Python Setup AWS credentials Setup AWS S3 bucket Setup AWS Lambda function Setup AWS CloudWatch event Setup AWS IAM role Setup AWS IAM policy setup lamda function &amp;laquo; updating soon&amp;raquo;</description>
     </item>
     
     <item>
@@ -44,8 +54,8 @@
       <pubDate>Wed, 13 Sep 2023 11:43:23 +0100</pubDate>
       
       <guid>http://shekharkoirala.github.io/posts/install_luminance_ubuntu/</guid>
-      <description>How to install luminance HDR in ubuntu  install dependecies  1  sudo apt install -y qtcreator qtbase5-dev qt5-qmake cmake libexiv2-dev libtiff-dev libraw-dev libpng-dev libjpeg-dev libopenexr-dev libfftw3-dev libboost-all-dev libcfitsio-dev libgsl-dev   This command installs the following dependencies:
- QT5 development tools exiv2 library libtiff library libraw library libpng library libjpeg library libopenexr library fftw3 library libboost library cfitsio library Gnu Gsl library  sudo apt install qttools5-dev sudo apt-get install qttools5-dev-tools sudo apt install libqt5webkit5-dev sudo apt-get install libqt5svg5-dev sudo apt-get install libeigen3-dev</description>
+      <description>How to install luminance HDR in ubuntu install dependecies 1 sudo apt install -y qtcreator qtbase5-dev qt5-qmake cmake libexiv2-dev libtiff-dev libraw-dev libpng-dev libjpeg-dev libopenexr-dev libfftw3-dev libboost-all-dev libcfitsio-dev libgsl-dev This command installs the following dependencies:
+QT5 development tools exiv2 library libtiff library libraw library libpng library libjpeg library libopenexr library fftw3 library libboost library cfitsio library Gnu Gsl library sudo apt install qttools5-dev sudo apt-get install qttools5-dev-tools sudo apt install libqt5webkit5-dev sudo apt-get install libqt5svg5-dev sudo apt-get install libeigen3-dev</description>
     </item>
     
     <item>
@@ -55,9 +65,10 @@
       
       <guid>http://shekharkoirala.github.io/posts/fujifilm_as_webcam/</guid>
       <description>How to use your XT1/2/3/4 fujifilm camera as webcam for your ubuntu 22.04. This is a simple guide to use your fujifilm camera as a webcam.
-Installation: 1  sudo apt-get install gphoto2 v4l2loopback-utils v4l2loopback-dkms ffmpeg   modprobe setup
-1 2 3  sudo modprobe -r v4l2loopback sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2   check video sources
-1  ls -l /dev/video*   Make sure there is no gphoto process already running:</description>
+Installation: 1 sudo apt-get install gphoto2 v4l2loopback-utils v4l2loopback-dkms ffmpeg modprobe setup
+1 2 3 sudo modprobe -r v4l2loopback sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2 check video sources
+1 ls -l /dev/video* Make sure there is no gphoto process already running:
+1 ps aux | grep gphoto check is camera is detected by gphoto2:</description>
     </item>
     
     <item>
@@ -67,8 +78,8 @@ Installation: 1  sudo apt-get install gphoto2 v4l2loopback-utils v4l2loopback-dk
       
       <guid>http://shekharkoirala.github.io/posts/fury_ffmpeg/</guid>
       <description>ffmpeg Recipes A list of useful receipes when using ffmpeg. A dump for future references.
-  Extract frames from video:
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #!/bin/zsh # Find all .mp4 files in the current directory and store them in an array input_files=(*.mp4) # Loop through each input file for input_file in &amp;#34;${input_files[@]}&amp;#34; do # Get the path to the input file directory input_dir=&amp;#34;$(dirname &amp;#34;$input_file&amp;#34;)&amp;#34; # Create a folder for the input file images in the same directory as the input file folder_name=&amp;#34;${input_file%.</description>
+Extract frames from video:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 #!/bin/zsh # Find all .mp4 files in the current directory and store them in an array input_files=(*.mp4) # Loop through each input file for input_file in &amp;#34;${input_files[@]}&amp;#34; do # Get the path to the input file directory input_dir=&amp;#34;$(dirname &amp;#34;$input_file&amp;#34;)&amp;#34; # Create a folder for the input file images in the same directory as the input file folder_name=&amp;#34;${input_file%.</description>
     </item>
     
     <item>
@@ -77,8 +88,7 @@ Installation: 1  sudo apt-get install gphoto2 v4l2loopback-utils v4l2loopback-dk
       <pubDate>Thu, 14 Apr 2022 22:12:46 +0100</pubDate>
       
       <guid>http://shekharkoirala.github.io/posts/omscs/</guid>
-      <description>Yeah, I joined OMSCS But wait, Now what ?
-  </description>
+      <description>Yeah, I joined OMSCS But wait, Now what ?</description>
     </item>
     
     <item>
