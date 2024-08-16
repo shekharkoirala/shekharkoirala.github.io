@@ -1,41 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Random on shekhar</title>
-    <link>http://shekharkoirala.github.io/categories/random/</link>
-    <description>Recent content in Random on shekhar</description>
+    <title>Random on shekhar&#39;s Blog</title>
+    <link>https://shekharkoirala.github.io/categories/random/</link>
+    <description>Recent content in Random on shekhar&#39;s Blog</description>
     <image>
-      <url>http://shekharkoirala.github.io/papermod-cover.png</url>
-      <link>http://shekharkoirala.github.io/papermod-cover.png</link>
+      <title>shekhar&#39;s Blog</title>
+      <url>https://shekharkoirala.github.io/papermod-cover.png</url>
+      <link>https://shekharkoirala.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.123.7</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 14 Apr 2022 22:12:46 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/categories/random/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>shekhar koirala</copyright>
+    <lastBuildDate>Thu, 14 Apr 2022 22:12:46 +0100</lastBuildDate>
+    <atom:link href="https://shekharkoirala.github.io/categories/random/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Oh my OMSCS</title>
-      <link>http://shekharkoirala.github.io/posts/omscs/</link>
+      <link>https://shekharkoirala.github.io/posts/omscs/</link>
       <pubDate>Thu, 14 Apr 2022 22:12:46 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/posts/omscs/</guid>
+      <guid>https://shekharkoirala.github.io/posts/omscs/</guid>
       <description>Yeah, I joined OMSCS But wait, Now what ?</description>
     </item>
-    
     <item>
       <title>AWS Lambda function for Data Scientist using Python.</title>
-      <link>http://shekharkoirala.github.io/posts/lambda_function_python/</link>
+      <link>https://shekharkoirala.github.io/posts/lambda_function_python/</link>
       <pubDate>Thu, 11 Jun 2020 14:35:28 +0545</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/posts/lambda_function_python/</guid>
+      <guid>https://shekharkoirala.github.io/posts/lambda_function_python/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;The post is a quick guide on &amp;ldquo;How we could use AWS lambda services to deploy some standalone task&amp;rdquo;. This is really helpful when we dont have to buy instances for such task. By using word task, I mean scripts, that could scrap data, or a cron job data aggregator. The BEST thing about the cron job is that , it is way cheaper. A million hits by lambda function is Free in AWS.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Create your own Blog Post</title>
-      <link>http://shekharkoirala.github.io/posts/first_post/</link>
+      <link>https://shekharkoirala.github.io/posts/first_post/</link>
       <pubDate>Sun, 31 May 2020 14:17:54 +0545</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/posts/first_post/</guid>
+      <guid>https://shekharkoirala.github.io/posts/first_post/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;I want to create a Blog. But there are some conditions that I want:&lt;/p&gt;
 &lt;ol&gt;
@@ -44,6 +42,5 @@
 &lt;li&gt;Based on Git, for future reference.&lt;/li&gt;
 &lt;/ol&gt;</description>
     </item>
-    
   </channel>
 </rss>

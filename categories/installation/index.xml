@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Installation on shekhar</title>
-    <link>http://shekharkoirala.github.io/categories/installation/</link>
-    <description>Recent content in Installation on shekhar</description>
+    <title>Installation on shekhar&#39;s Blog</title>
+    <link>https://shekharkoirala.github.io/categories/installation/</link>
+    <description>Recent content in Installation on shekhar&#39;s Blog</description>
     <image>
-      <url>http://shekharkoirala.github.io/papermod-cover.png</url>
-      <link>http://shekharkoirala.github.io/papermod-cover.png</link>
+      <title>shekhar&#39;s Blog</title>
+      <url>https://shekharkoirala.github.io/papermod-cover.png</url>
+      <link>https://shekharkoirala.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.123.7</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Aug 2024 10:56:06 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/categories/installation/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>shekhar koirala</copyright>
+    <lastBuildDate>Fri, 16 Aug 2024 10:56:06 +0100</lastBuildDate>
+    <atom:link href="https://shekharkoirala.github.io/categories/installation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nvidia_cuda_ubuntu1</title>
-      <link>http://shekharkoirala.github.io/posts/nvidia_cuda_ubuntu1/</link>
+      <link>https://shekharkoirala.github.io/posts/nvidia_cuda_ubuntu1/</link>
       <pubDate>Fri, 16 Aug 2024 10:56:06 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/posts/nvidia_cuda_ubuntu1/</guid>
+      <guid>https://shekharkoirala.github.io/posts/nvidia_cuda_ubuntu1/</guid>
       <description>MOTIVE So, Ubuntu 24.04 LTS was released on 25 April 2024. Its been more 3 months from the release and I thought it would be safe enough to install it in my main working computer. Wrong!! I wanted a documentation for setting up the CUDA 12.2 in Ubuntu 24.04 but ended for reinstalling everything. Thus, here is the blog for future me to setup everything. Thanks to all the great help I found in the Internet [ referenced as links ].</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,112 +1,96 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on shekhar</title>
-    <link>http://shekharkoirala.github.io/posts/</link>
-    <description>Recent content in Posts on shekhar</description>
+    <title>Posts on shekhar&#39;s Blog</title>
+    <link>https://shekharkoirala.github.io/posts/</link>
+    <description>Recent content in Posts on shekhar&#39;s Blog</description>
     <image>
-      <url>http://shekharkoirala.github.io/papermod-cover.png</url>
-      <link>http://shekharkoirala.github.io/papermod-cover.png</link>
+      <title>shekhar&#39;s Blog</title>
+      <url>https://shekharkoirala.github.io/papermod-cover.png</url>
+      <link>https://shekharkoirala.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.123.7</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Aug 2024 10:56:06 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>shekhar koirala</copyright>
+    <lastBuildDate>Fri, 16 Aug 2024 10:56:06 +0100</lastBuildDate>
+    <atom:link href="https://shekharkoirala.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nvidia_cuda_ubuntu1</title>
-      <link>http://shekharkoirala.github.io/posts/nvidia_cuda_ubuntu1/</link>
+      <link>https://shekharkoirala.github.io/posts/nvidia_cuda_ubuntu1/</link>
       <pubDate>Fri, 16 Aug 2024 10:56:06 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/posts/nvidia_cuda_ubuntu1/</guid>
+      <guid>https://shekharkoirala.github.io/posts/nvidia_cuda_ubuntu1/</guid>
       <description>MOTIVE So, Ubuntu 24.04 LTS was released on 25 April 2024. Its been more 3 months from the release and I thought it would be safe enough to install it in my main working computer. Wrong!! I wanted a documentation for setting up the CUDA 12.2 in Ubuntu 24.04 but ended for reinstalling everything. Thus, here is the blog for future me to setup everything. Thanks to all the great help I found in the Internet [ referenced as links ].</description>
     </item>
-    
     <item>
       <title>Case study: Automated Image Clustering for E-commerce company</title>
-      <link>http://shekharkoirala.github.io/posts/image_clustering_intro/</link>
+      <link>https://shekharkoirala.github.io/posts/image_clustering_intro/</link>
       <pubDate>Sat, 04 May 2024 14:49:57 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/posts/image_clustering_intro/</guid>
+      <guid>https://shekharkoirala.github.io/posts/image_clustering_intro/</guid>
       <description>Background In this case study, Artificial Intelligence based system is used to take buisness decisions. The study is based on a e-commerce company which ingest lots of data like images, quarterly reports, invoices, customer feedbacks, customer reviews with images, etc. It would be great if this large amount of data is automatically categorized or grouped together. Previously, a machine learning team in the company had created a model to classify the input data.</description>
     </item>
-    
     <item>
       <title>Data_sourcing_ml</title>
-      <link>http://shekharkoirala.github.io/posts/data_sourcing_ml/</link>
+      <link>https://shekharkoirala.github.io/posts/data_sourcing_ml/</link>
       <pubDate>Sun, 07 Apr 2024 20:53:30 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/posts/data_sourcing_ml/</guid>
+      <guid>https://shekharkoirala.github.io/posts/data_sourcing_ml/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Terraform_aws_python</title>
-      <link>http://shekharkoirala.github.io/posts/terraform_aws_python/</link>
+      <link>https://shekharkoirala.github.io/posts/terraform_aws_python/</link>
       <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/posts/terraform_aws_python/</guid>
+      <guid>https://shekharkoirala.github.io/posts/terraform_aws_python/</guid>
       <description>This is based on a workshop on Pycon Ireland 2023 given by : Pavlo Tishkin
 Setup AWS account Setup AWS CLI Setup Terraform Setup Python Setup AWS credentials Setup AWS S3 bucket Setup AWS Lambda function Setup AWS CloudWatch event Setup AWS IAM role Setup AWS IAM policy setup lamda function &amp;laquo; updating soon&amp;raquo;</description>
     </item>
-    
     <item>
       <title>Install_luminance_ubuntu</title>
-      <link>http://shekharkoirala.github.io/posts/install_luminance_ubuntu/</link>
+      <link>https://shekharkoirala.github.io/posts/install_luminance_ubuntu/</link>
       <pubDate>Wed, 13 Sep 2023 11:43:23 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/posts/install_luminance_ubuntu/</guid>
+      <guid>https://shekharkoirala.github.io/posts/install_luminance_ubuntu/</guid>
       <description>How to install luminance HDR in ubuntu install dependecies 1 sudo apt install -y qtcreator qtbase5-dev qt5-qmake cmake libexiv2-dev libtiff-dev libraw-dev libpng-dev libjpeg-dev libopenexr-dev libfftw3-dev libboost-all-dev libcfitsio-dev libgsl-dev This command installs the following dependencies:
 QT5 development tools exiv2 library libtiff library libraw library libpng library libjpeg library libopenexr library fftw3 library libboost library cfitsio library Gnu Gsl library sudo apt install qttools5-dev sudo apt-get install qttools5-dev-tools sudo apt install libqt5webkit5-dev sudo apt-get install libqt5svg5-dev sudo apt-get install libeigen3-dev</description>
     </item>
-    
     <item>
       <title>Fujifilm_as_webcam</title>
-      <link>http://shekharkoirala.github.io/posts/fujifilm_as_webcam/</link>
+      <link>https://shekharkoirala.github.io/posts/fujifilm_as_webcam/</link>
       <pubDate>Wed, 24 May 2023 22:07:46 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/posts/fujifilm_as_webcam/</guid>
+      <guid>https://shekharkoirala.github.io/posts/fujifilm_as_webcam/</guid>
       <description>How to use your XT1/2/3/4 fujifilm camera as webcam for your ubuntu 22.04. This is a simple guide to use your fujifilm camera as a webcam.
 Installation: 1 sudo apt-get install gphoto2 v4l2loopback-utils v4l2loopback-dkms ffmpeg modprobe setup
 1 2 3 sudo modprobe -r v4l2loopback sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2 check video sources
 1 ls -l /dev/video* Make sure there is no gphoto process already running:
 1 ps aux | grep gphoto check is camera is detected by gphoto2:</description>
     </item>
-    
     <item>
       <title>Fast Fury and Fantastic .... The ffmpeg</title>
-      <link>http://shekharkoirala.github.io/posts/fury_ffmpeg/</link>
+      <link>https://shekharkoirala.github.io/posts/fury_ffmpeg/</link>
       <pubDate>Mon, 06 Mar 2023 22:49:00 +0000</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/posts/fury_ffmpeg/</guid>
+      <guid>https://shekharkoirala.github.io/posts/fury_ffmpeg/</guid>
       <description>ffmpeg Recipes A list of useful receipes when using ffmpeg. A dump for future references.
 Extract frames from video:
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 #!/bin/zsh # Find all .mp4 files in the current directory and store them in an array input_files=(*.mp4) # Loop through each input file for input_file in &amp;#34;${input_files[@]}&amp;#34; do # Get the path to the input file directory input_dir=&amp;#34;$(dirname &amp;#34;$input_file&amp;#34;)&amp;#34; # Create a folder for the input file images in the same directory as the input file folder_name=&amp;#34;${input_file%.</description>
     </item>
-    
     <item>
       <title>Oh my OMSCS</title>
-      <link>http://shekharkoirala.github.io/posts/omscs/</link>
+      <link>https://shekharkoirala.github.io/posts/omscs/</link>
       <pubDate>Thu, 14 Apr 2022 22:12:46 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/posts/omscs/</guid>
+      <guid>https://shekharkoirala.github.io/posts/omscs/</guid>
       <description>Yeah, I joined OMSCS But wait, Now what ?</description>
     </item>
-    
     <item>
       <title>AWS Lambda function for Data Scientist using Python.</title>
-      <link>http://shekharkoirala.github.io/posts/lambda_function_python/</link>
+      <link>https://shekharkoirala.github.io/posts/lambda_function_python/</link>
       <pubDate>Thu, 11 Jun 2020 14:35:28 +0545</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/posts/lambda_function_python/</guid>
+      <guid>https://shekharkoirala.github.io/posts/lambda_function_python/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;The post is a quick guide on &amp;ldquo;How we could use AWS lambda services to deploy some standalone task&amp;rdquo;. This is really helpful when we dont have to buy instances for such task. By using word task, I mean scripts, that could scrap data, or a cron job data aggregator. The BEST thing about the cron job is that , it is way cheaper. A million hits by lambda function is Free in AWS.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Create your own Blog Post</title>
-      <link>http://shekharkoirala.github.io/posts/first_post/</link>
+      <link>https://shekharkoirala.github.io/posts/first_post/</link>
       <pubDate>Sun, 31 May 2020 14:17:54 +0545</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/posts/first_post/</guid>
+      <guid>https://shekharkoirala.github.io/posts/first_post/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;I want to create a Blog. But there are some conditions that I want:&lt;/p&gt;
 &lt;ol&gt;
@@ -115,6 +99,5 @@ Extract frames from video:
 &lt;li&gt;Based on Git, for future reference.&lt;/li&gt;
 &lt;/ol&gt;</description>
     </item>
-    
   </channel>
 </rss>

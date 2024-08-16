@@ -1,357 +1,284 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on shekhar</title>
-    <link>http://shekharkoirala.github.io/tags/</link>
-    <description>Recent content in Tags on shekhar</description>
+    <title>Tags on shekhar&#39;s Blog</title>
+    <link>https://shekharkoirala.github.io/tags/</link>
+    <description>Recent content in Tags on shekhar&#39;s Blog</description>
     <image>
-      <url>http://shekharkoirala.github.io/papermod-cover.png</url>
-      <link>http://shekharkoirala.github.io/papermod-cover.png</link>
+      <title>shekhar&#39;s Blog</title>
+      <url>https://shekharkoirala.github.io/papermod-cover.png</url>
+      <link>https://shekharkoirala.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.123.7</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Aug 2024 10:56:06 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>shekhar koirala</copyright>
+    <lastBuildDate>Fri, 16 Aug 2024 10:56:06 +0100</lastBuildDate>
+    <atom:link href="https://shekharkoirala.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>24-04</title>
-      <link>http://shekharkoirala.github.io/tags/24-04/</link>
-      <pubDate>Fri, 16 Aug 2024 10:56:06 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/24-04/</guid>
+      <link>https://shekharkoirala.github.io/tags/24-04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/24-04/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>CUDA</title>
-      <link>http://shekharkoirala.github.io/tags/cuda/</link>
-      <pubDate>Fri, 16 Aug 2024 10:56:06 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/cuda/</guid>
+      <link>https://shekharkoirala.github.io/tags/cuda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/cuda/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>CuDNN</title>
-      <link>http://shekharkoirala.github.io/tags/cudnn/</link>
-      <pubDate>Fri, 16 Aug 2024 10:56:06 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/cudnn/</guid>
+      <link>https://shekharkoirala.github.io/tags/cudnn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/cudnn/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Drivers</title>
-      <link>http://shekharkoirala.github.io/tags/drivers/</link>
-      <pubDate>Fri, 16 Aug 2024 10:56:06 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/drivers/</guid>
+      <link>https://shekharkoirala.github.io/tags/drivers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/drivers/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Nvidia</title>
-      <link>http://shekharkoirala.github.io/tags/nvidia/</link>
-      <pubDate>Fri, 16 Aug 2024 10:56:06 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/nvidia/</guid>
+      <link>https://shekharkoirala.github.io/tags/nvidia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/nvidia/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Pipenv</title>
-      <link>http://shekharkoirala.github.io/tags/pipenv/</link>
-      <pubDate>Fri, 16 Aug 2024 10:56:06 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/pipenv/</guid>
+      <link>https://shekharkoirala.github.io/tags/pipenv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/pipenv/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Poetry</title>
-      <link>http://shekharkoirala.github.io/tags/poetry/</link>
-      <pubDate>Fri, 16 Aug 2024 10:56:06 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/poetry/</guid>
+      <link>https://shekharkoirala.github.io/tags/poetry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/poetry/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Pyenv</title>
-      <link>http://shekharkoirala.github.io/tags/pyenv/</link>
-      <pubDate>Fri, 16 Aug 2024 10:56:06 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/pyenv/</guid>
+      <link>https://shekharkoirala.github.io/tags/pyenv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/pyenv/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>UBUNTU</title>
-      <link>http://shekharkoirala.github.io/tags/ubuntu/</link>
-      <pubDate>Fri, 16 Aug 2024 10:56:06 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/ubuntu/</guid>
+      <link>https://shekharkoirala.github.io/tags/ubuntu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/ubuntu/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Clustering</title>
-      <link>http://shekharkoirala.github.io/tags/clustering/</link>
-      <pubDate>Sat, 04 May 2024 14:49:57 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/clustering/</guid>
+      <link>https://shekharkoirala.github.io/tags/clustering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/clustering/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Image</title>
-      <link>http://shekharkoirala.github.io/tags/image/</link>
-      <pubDate>Sat, 04 May 2024 14:49:57 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/image/</guid>
+      <link>https://shekharkoirala.github.io/tags/image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/image/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Ml</title>
-      <link>http://shekharkoirala.github.io/tags/ml/</link>
-      <pubDate>Sat, 04 May 2024 14:49:57 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/ml/</guid>
+      <link>https://shekharkoirala.github.io/tags/ml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/ml/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Unsupervised</title>
-      <link>http://shekharkoirala.github.io/tags/unsupervised/</link>
-      <pubDate>Sat, 04 May 2024 14:49:57 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/unsupervised/</guid>
+      <link>https://shekharkoirala.github.io/tags/unsupervised/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/unsupervised/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Data</title>
-      <link>http://shekharkoirala.github.io/tags/data/</link>
-      <pubDate>Sun, 07 Apr 2024 20:53:30 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/data/</guid>
+      <link>https://shekharkoirala.github.io/tags/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/data/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Pipeline</title>
-      <link>http://shekharkoirala.github.io/tags/pipeline/</link>
-      <pubDate>Sun, 07 Apr 2024 20:53:30 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/pipeline/</guid>
+      <link>https://shekharkoirala.github.io/tags/pipeline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/pipeline/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Prefect</title>
-      <link>http://shekharkoirala.github.io/tags/prefect/</link>
-      <pubDate>Sun, 07 Apr 2024 20:53:30 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/prefect/</guid>
+      <link>https://shekharkoirala.github.io/tags/prefect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/prefect/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Workflow</title>
-      <link>http://shekharkoirala.github.io/tags/workflow/</link>
-      <pubDate>Sun, 07 Apr 2024 20:53:30 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/workflow/</guid>
+      <link>https://shekharkoirala.github.io/tags/workflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/workflow/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>AWS</title>
-      <link>http://shekharkoirala.github.io/tags/aws/</link>
-      <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/aws/</guid>
+      <link>https://shekharkoirala.github.io/tags/aws/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/aws/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Cloudwatch</title>
-      <link>http://shekharkoirala.github.io/tags/cloudwatch/</link>
-      <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/cloudwatch/</guid>
+      <link>https://shekharkoirala.github.io/tags/cloudwatch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/cloudwatch/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Lambda</title>
-      <link>http://shekharkoirala.github.io/tags/lambda/</link>
-      <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/lambda/</guid>
+      <link>https://shekharkoirala.github.io/tags/lambda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/lambda/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Python</title>
-      <link>http://shekharkoirala.github.io/tags/python/</link>
-      <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/python/</guid>
+      <link>https://shekharkoirala.github.io/tags/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/python/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>S3</title>
-      <link>http://shekharkoirala.github.io/tags/s3/</link>
-      <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/s3/</guid>
+      <link>https://shekharkoirala.github.io/tags/s3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/s3/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Serverless</title>
-      <link>http://shekharkoirala.github.io/tags/serverless/</link>
-      <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/serverless/</guid>
+      <link>https://shekharkoirala.github.io/tags/serverless/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/serverless/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Terraform</title>
-      <link>http://shekharkoirala.github.io/tags/terraform/</link>
-      <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/terraform/</guid>
+      <link>https://shekharkoirala.github.io/tags/terraform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/terraform/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>AEB</title>
-      <link>http://shekharkoirala.github.io/tags/aeb/</link>
-      <pubDate>Wed, 13 Sep 2023 11:43:23 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/aeb/</guid>
+      <link>https://shekharkoirala.github.io/tags/aeb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/aeb/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Camera</title>
-      <link>http://shekharkoirala.github.io/tags/camera/</link>
-      <pubDate>Wed, 13 Sep 2023 11:43:23 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/camera/</guid>
+      <link>https://shekharkoirala.github.io/tags/camera/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/camera/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>HDR</title>
-      <link>http://shekharkoirala.github.io/tags/hdr/</link>
-      <pubDate>Wed, 13 Sep 2023 11:43:23 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/hdr/</guid>
+      <link>https://shekharkoirala.github.io/tags/hdr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/hdr/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Luminance</title>
-      <link>http://shekharkoirala.github.io/tags/luminance/</link>
-      <pubDate>Wed, 13 Sep 2023 11:43:23 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/luminance/</guid>
+      <link>https://shekharkoirala.github.io/tags/luminance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/luminance/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Software</title>
-      <link>http://shekharkoirala.github.io/tags/software/</link>
-      <pubDate>Wed, 13 Sep 2023 11:43:23 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/software/</guid>
+      <link>https://shekharkoirala.github.io/tags/software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/software/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Fujfilm</title>
-      <link>http://shekharkoirala.github.io/tags/fujfilm/</link>
-      <pubDate>Wed, 24 May 2023 22:07:46 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/fujfilm/</guid>
+      <link>https://shekharkoirala.github.io/tags/fujfilm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/fujfilm/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Video</title>
-      <link>http://shekharkoirala.github.io/tags/video/</link>
-      <pubDate>Wed, 24 May 2023 22:07:46 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/video/</guid>
+      <link>https://shekharkoirala.github.io/tags/video/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/video/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Webcam</title>
-      <link>http://shekharkoirala.github.io/tags/webcam/</link>
-      <pubDate>Wed, 24 May 2023 22:07:46 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/webcam/</guid>
+      <link>https://shekharkoirala.github.io/tags/webcam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/webcam/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Xt4</title>
-      <link>http://shekharkoirala.github.io/tags/xt4/</link>
-      <pubDate>Wed, 24 May 2023 22:07:46 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/xt4/</guid>
+      <link>https://shekharkoirala.github.io/tags/xt4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/xt4/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Developer</title>
-      <link>http://shekharkoirala.github.io/tags/developer/</link>
-      <pubDate>Mon, 06 Mar 2023 22:49:00 +0000</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/developer/</guid>
+      <link>https://shekharkoirala.github.io/tags/developer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/developer/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Ffmpeg</title>
-      <link>http://shekharkoirala.github.io/tags/ffmpeg/</link>
-      <pubDate>Mon, 06 Mar 2023 22:49:00 +0000</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/ffmpeg/</guid>
+      <link>https://shekharkoirala.github.io/tags/ffmpeg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/ffmpeg/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Master&#39;s</title>
-      <link>http://shekharkoirala.github.io/tags/masters/</link>
-      <pubDate>Thu, 14 Apr 2022 22:12:46 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/masters/</guid>
+      <link>https://shekharkoirala.github.io/tags/masters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/masters/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>OMSCS</title>
-      <link>http://shekharkoirala.github.io/tags/omscs/</link>
-      <pubDate>Thu, 14 Apr 2022 22:12:46 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/omscs/</guid>
+      <link>https://shekharkoirala.github.io/tags/omscs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/omscs/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Blog</title>
-      <link>http://shekharkoirala.github.io/tags/blog/</link>
-      <pubDate>Thu, 11 Jun 2020 14:35:28 +0545</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/tags/blog/</guid>
+      <link>https://shekharkoirala.github.io/tags/blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/blog/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

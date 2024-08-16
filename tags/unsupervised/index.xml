@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Unsupervised on shekhar</title>
-    <link>http://shekharkoirala.github.io/tags/unsupervised/</link>
-    <description>Recent content in Unsupervised on shekhar</description>
+    <title>Unsupervised on shekhar&#39;s Blog</title>
+    <link>https://shekharkoirala.github.io/tags/unsupervised/</link>
+    <description>Recent content in Unsupervised on shekhar&#39;s Blog</description>
     <image>
-      <url>http://shekharkoirala.github.io/papermod-cover.png</url>
-      <link>http://shekharkoirala.github.io/papermod-cover.png</link>
+      <title>shekhar&#39;s Blog</title>
+      <url>https://shekharkoirala.github.io/papermod-cover.png</url>
+      <link>https://shekharkoirala.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.123.7</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 04 May 2024 14:49:57 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/tags/unsupervised/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>shekhar koirala</copyright>
+    <lastBuildDate>Sat, 04 May 2024 14:49:57 +0100</lastBuildDate>
+    <atom:link href="https://shekharkoirala.github.io/tags/unsupervised/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Case study: Automated Image Clustering for E-commerce company</title>
-      <link>http://shekharkoirala.github.io/posts/image_clustering_intro/</link>
+      <link>https://shekharkoirala.github.io/posts/image_clustering_intro/</link>
       <pubDate>Sat, 04 May 2024 14:49:57 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/posts/image_clustering_intro/</guid>
+      <guid>https://shekharkoirala.github.io/posts/image_clustering_intro/</guid>
       <description>Background In this case study, Artificial Intelligence based system is used to take buisness decisions. The study is based on a e-commerce company which ingest lots of data like images, quarterly reports, invoices, customer feedbacks, customer reviews with images, etc. It would be great if this large amount of data is automatically categorized or grouped together. Previously, a machine learning team in the company had created a model to classify the input data.</description>
     </item>
-    
   </channel>
 </rss>

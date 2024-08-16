@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>HDR on shekhar</title>
-    <link>http://shekharkoirala.github.io/tags/hdr/</link>
-    <description>Recent content in HDR on shekhar</description>
+    <title>HDR on shekhar&#39;s Blog</title>
+    <link>https://shekharkoirala.github.io/tags/hdr/</link>
+    <description>Recent content in HDR on shekhar&#39;s Blog</description>
     <image>
-      <url>http://shekharkoirala.github.io/papermod-cover.png</url>
-      <link>http://shekharkoirala.github.io/papermod-cover.png</link>
+      <title>shekhar&#39;s Blog</title>
+      <url>https://shekharkoirala.github.io/papermod-cover.png</url>
+      <link>https://shekharkoirala.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.123.7</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 13 Sep 2023 11:43:23 +0100</lastBuildDate><atom:link href="http://shekharkoirala.github.io/tags/hdr/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>shekhar koirala</copyright>
+    <lastBuildDate>Wed, 13 Sep 2023 11:43:23 +0100</lastBuildDate>
+    <atom:link href="https://shekharkoirala.github.io/tags/hdr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install_luminance_ubuntu</title>
-      <link>http://shekharkoirala.github.io/posts/install_luminance_ubuntu/</link>
+      <link>https://shekharkoirala.github.io/posts/install_luminance_ubuntu/</link>
       <pubDate>Wed, 13 Sep 2023 11:43:23 +0100</pubDate>
-      
-      <guid>http://shekharkoirala.github.io/posts/install_luminance_ubuntu/</guid>
+      <guid>https://shekharkoirala.github.io/posts/install_luminance_ubuntu/</guid>
       <description>How to install luminance HDR in ubuntu install dependecies 1 sudo apt install -y qtcreator qtbase5-dev qt5-qmake cmake libexiv2-dev libtiff-dev libraw-dev libpng-dev libjpeg-dev libopenexr-dev libfftw3-dev libboost-all-dev libcfitsio-dev libgsl-dev This command installs the following dependencies:
 QT5 development tools exiv2 library libtiff library libraw library libpng library libjpeg library libopenexr library fftw3 library libboost library cfitsio library Gnu Gsl library sudo apt install qttools5-dev sudo apt-get install qttools5-dev-tools sudo apt install libqt5webkit5-dev sudo apt-get install libqt5svg5-dev sudo apt-get install libeigen3-dev</description>
     </item>
-    
   </channel>
 </rss>
