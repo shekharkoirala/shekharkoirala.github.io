@@ -19,7 +19,7 @@
       <link>https://shekharkoirala.github.io/posts/nvidia_cuda_ubuntu1/</link>
       <pubDate>Fri, 16 Aug 2024 10:56:06 +0100</pubDate>
       <guid>https://shekharkoirala.github.io/posts/nvidia_cuda_ubuntu1/</guid>
-      <description>MOTIVE So, Ubuntu 24.04 LTS was released on 25 April 2024. Its been more 3 months from the release and I thought it would be safe enough to install it in my main working computer. Wrong!! I wanted a documentation for setting up the CUDA 12.2 in Ubuntu 24.04 but ended for reinstalling everything. Thus, here is the blog for future me to setup everything. Thanks to all the great help I found in the Internet [ referenced as links ].</description>
+      <description>Learn how to install CUDA 12.2 on Ubuntu 24.04. Follow our step-by-step guide to set up NVIDIA drivers, CUDA Toolkit, and manage Python environments with Pyenv, Pipenv, and Poetry.</description>
     </item>
   </channel>
 </rss>
