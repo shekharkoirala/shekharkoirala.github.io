@@ -16,9 +16,9 @@
     <atom:link href="https://shekharkoirala.github.io/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install Cuda 12.2 in Ubuntu 24.04</title>
-      <link>https://shekharkoirala.github.io/posts/nvidia_cuda_ubuntu1/</link>
+      <link>https://shekharkoirala.github.io/posts/nvidia_cuda12_ubuntu/</link>
       <pubDate>Fri, 16 Aug 2024 10:56:06 +0100</pubDate>
-      <guid>https://shekharkoirala.github.io/posts/nvidia_cuda_ubuntu1/</guid>
+      <guid>https://shekharkoirala.github.io/posts/nvidia_cuda12_ubuntu/</guid>
       <description>Learn how to install CUDA 12.2 on Ubuntu 24.04. Follow our step-by-step guide to set up NVIDIA drivers, CUDA Toolkit, and manage Python environments with Pyenv, Pipenv, and Poetry.</description>
     </item>
   </channel>
