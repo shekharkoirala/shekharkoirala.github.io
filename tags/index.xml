@@ -12,13 +12,13 @@
     <generator>Hugo -- 0.123.7</generator>
     <language>en</language>
     <copyright>shekhar koirala</copyright>
-    <lastBuildDate>Fri, 16 Aug 2024 10:56:06 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 19 Aug 2024 13:37:53 +0100</lastBuildDate>
     <atom:link href="https://shekharkoirala.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>24-04</title>
-      <link>https://shekharkoirala.github.io/tags/24-04/</link>
+      <title>Benchmark</title>
+      <link>https://shekharkoirala.github.io/tags/benchmark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://shekharkoirala.github.io/tags/24-04/</guid>
+      <guid>https://shekharkoirala.github.io/tags/benchmark/</guid>
       <description></description>
     </item>
     <item>
@@ -26,6 +26,55 @@
       <link>https://shekharkoirala.github.io/tags/cuda/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://shekharkoirala.github.io/tags/cuda/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jetson</title>
+      <link>https://shekharkoirala.github.io/tags/jetson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/jetson/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nvidia</title>
+      <link>https://shekharkoirala.github.io/tags/nvidia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/nvidia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nvidia SDK Manager</title>
+      <link>https://shekharkoirala.github.io/tags/nvidia-sdk-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/nvidia-sdk-manager/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Poetry</title>
+      <link>https://shekharkoirala.github.io/tags/poetry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/poetry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pyenv</title>
+      <link>https://shekharkoirala.github.io/tags/pyenv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/pyenv/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tensorrt</title>
+      <link>https://shekharkoirala.github.io/tags/tensorrt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/tensorrt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>24-04</title>
+      <link>https://shekharkoirala.github.io/tags/24-04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/tags/24-04/</guid>
       <description></description>
     </item>
     <item>
@@ -43,31 +92,10 @@
       <description></description>
     </item>
     <item>
-      <title>Nvidia</title>
-      <link>https://shekharkoirala.github.io/tags/nvidia/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://shekharkoirala.github.io/tags/nvidia/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Pipenv</title>
       <link>https://shekharkoirala.github.io/tags/pipenv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://shekharkoirala.github.io/tags/pipenv/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Poetry</title>
-      <link>https://shekharkoirala.github.io/tags/poetry/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://shekharkoirala.github.io/tags/poetry/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Pyenv</title>
-      <link>https://shekharkoirala.github.io/tags/pyenv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://shekharkoirala.github.io/tags/pyenv/</guid>
       <description></description>
     </item>
     <item>

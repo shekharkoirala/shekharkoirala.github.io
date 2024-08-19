@@ -12,10 +12,17 @@
     <generator>Hugo -- 0.123.7</generator>
     <language>en</language>
     <copyright>shekhar koirala</copyright>
-    <lastBuildDate>Fri, 16 Aug 2024 10:56:06 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 19 Aug 2024 13:37:53 +0100</lastBuildDate>
     <atom:link href="https://shekharkoirala.github.io/categories/nvidia/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Install Cuda 12.2 in Ubuntu 24.04</title>
+      <title>Setting up Nvidia SDK Manager and Torch Library for Development</title>
+      <link>https://shekharkoirala.github.io/posts/nvidia_jetson_sdk_jetpack_setup/</link>
+      <pubDate>Mon, 19 Aug 2024 13:37:53 +0100</pubDate>
+      <guid>https://shekharkoirala.github.io/posts/nvidia_jetson_sdk_jetpack_setup/</guid>
+      <description>Learn how to setup Nvidia SDK Manager to install latest jetpack in jetson development boards like Orion AGX, Nano Xavier. This blog also extent to setup tensorrt and do benchmark over existing Pytorch Model</description>
+    </item>
+    <item>
+      <title>Installing Cuda 12.x in Ubuntu 24.04</title>
       <link>https://shekharkoirala.github.io/posts/nvidia_cuda12_ubuntu/</link>
       <pubDate>Fri, 16 Aug 2024 10:56:06 +0100</pubDate>
       <guid>https://shekharkoirala.github.io/posts/nvidia_cuda12_ubuntu/</guid>
