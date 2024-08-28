@@ -12,8 +12,15 @@
     <generator>Hugo -- 0.123.7</generator>
     <language>en</language>
     <copyright>shekhar koirala</copyright>
-    <lastBuildDate>Mon, 06 Mar 2023 22:49:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2024 17:47:41 +0100</lastBuildDate>
     <atom:link href="https://shekharkoirala.github.io/categories/tech-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Machine learning Box</title>
+      <link>https://shekharkoirala.github.io/posts/machinelearning/</link>
+      <pubDate>Wed, 28 Aug 2024 17:47:41 +0100</pubDate>
+      <guid>https://shekharkoirala.github.io/posts/machinelearning/</guid>
+      <description>A concise collected guide for Machine learning. It might be redicously long but will try to update periodically</description>
+    </item>
     <item>
       <title>Fast Fury and Fantastic .... The ffmpeg</title>
       <link>https://shekharkoirala.github.io/posts/fury_ffmpeg/</link>

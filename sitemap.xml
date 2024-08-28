@@ -2,10 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://shekharkoirala.github.io/tags/benchmark/</loc>
-    <lastmod>2024-08-19T13:37:53+01:00</lastmod>
+    <loc>https://shekharkoirala.github.io/posts/</loc>
+    <lastmod>2024-08-28T17:56:32+01:00</lastmod>
+  </url><url>
+    <loc>https://shekharkoirala.github.io/</loc>
+    <lastmod>2024-08-28T17:56:32+01:00</lastmod>
+  </url><url>
+    <loc>https://shekharkoirala.github.io/tags/blog/</loc>
+    <lastmod>2024-08-28T17:47:41+01:00</lastmod>
   </url><url>
     <loc>https://shekharkoirala.github.io/categories/</loc>
+    <lastmod>2024-08-28T17:47:41+01:00</lastmod>
+  </url><url>
+    <loc>https://shekharkoirala.github.io/posts/machinelearning/</loc>
+    <lastmod>2024-08-28T17:47:41+01:00</lastmod>
+  </url><url>
+    <loc>https://shekharkoirala.github.io/tags/ml/</loc>
+    <lastmod>2024-08-28T17:47:41+01:00</lastmod>
+  </url><url>
+    <loc>https://shekharkoirala.github.io/categories/ml/</loc>
+    <lastmod>2024-08-28T17:47:41+01:00</lastmod>
+  </url><url>
+    <loc>https://shekharkoirala.github.io/categories/studies/</loc>
+    <lastmod>2024-08-28T17:47:41+01:00</lastmod>
+  </url><url>
+    <loc>https://shekharkoirala.github.io/tags/</loc>
+    <lastmod>2024-08-28T17:47:41+01:00</lastmod>
+  </url><url>
+    <loc>https://shekharkoirala.github.io/categories/tech-notes/</loc>
+    <lastmod>2024-08-28T17:47:41+01:00</lastmod>
+  </url><url>
+    <loc>https://shekharkoirala.github.io/tags/benchmark/</loc>
     <lastmod>2024-08-19T13:37:53+01:00</lastmod>
   </url><url>
     <loc>https://shekharkoirala.github.io/tags/cuda/</loc>
@@ -29,19 +56,10 @@
     <loc>https://shekharkoirala.github.io/tags/poetry/</loc>
     <lastmod>2024-08-19T13:37:53+01:00</lastmod>
   </url><url>
-    <loc>https://shekharkoirala.github.io/posts/</loc>
-    <lastmod>2024-08-19T13:37:53+01:00</lastmod>
-  </url><url>
     <loc>https://shekharkoirala.github.io/tags/pyenv/</loc>
     <lastmod>2024-08-19T13:37:53+01:00</lastmod>
   </url><url>
     <loc>https://shekharkoirala.github.io/posts/nvidia_jetson_sdk_jetpack_setup/</loc>
-    <lastmod>2024-08-19T13:37:53+01:00</lastmod>
-  </url><url>
-    <loc>https://shekharkoirala.github.io/</loc>
-    <lastmod>2024-08-19T13:37:53+01:00</lastmod>
-  </url><url>
-    <loc>https://shekharkoirala.github.io/tags/</loc>
     <lastmod>2024-08-19T13:37:53+01:00</lastmod>
   </url><url>
     <loc>https://shekharkoirala.github.io/tags/tensorrt/</loc>
@@ -75,12 +93,6 @@
     <lastmod>2024-05-04T14:49:57+01:00</lastmod>
   </url><url>
     <loc>https://shekharkoirala.github.io/tags/image/</loc>
-    <lastmod>2024-05-04T14:49:57+01:00</lastmod>
-  </url><url>
-    <loc>https://shekharkoirala.github.io/tags/ml/</loc>
-    <lastmod>2024-05-04T14:49:57+01:00</lastmod>
-  </url><url>
-    <loc>https://shekharkoirala.github.io/categories/ml/</loc>
     <lastmod>2024-05-04T14:49:57+01:00</lastmod>
   </url><url>
     <loc>https://shekharkoirala.github.io/tags/unsupervised/</loc>
@@ -191,9 +203,6 @@
     <loc>https://shekharkoirala.github.io/tags/ffmpeg/</loc>
     <lastmod>2023-03-06T22:49:00+00:00</lastmod>
   </url><url>
-    <loc>https://shekharkoirala.github.io/categories/tech-notes/</loc>
-    <lastmod>2023-03-06T22:49:00+00:00</lastmod>
-  </url><url>
     <loc>https://shekharkoirala.github.io/categories/work/</loc>
     <lastmod>2023-03-06T22:49:00+00:00</lastmod>
   </url><url>
@@ -209,13 +218,7 @@
     <loc>https://shekharkoirala.github.io/categories/random/</loc>
     <lastmod>2022-04-14T22:12:46+01:00</lastmod>
   </url><url>
-    <loc>https://shekharkoirala.github.io/categories/studies/</loc>
-    <lastmod>2022-04-14T22:12:46+01:00</lastmod>
-  </url><url>
     <loc>https://shekharkoirala.github.io/posts/lambda_function_python/</loc>
-    <lastmod>2020-06-11T14:35:28+05:45</lastmod>
-  </url><url>
-    <loc>https://shekharkoirala.github.io/tags/blog/</loc>
     <lastmod>2020-06-11T14:35:28+05:45</lastmod>
   </url><url>
     <loc>https://shekharkoirala.github.io/posts/first_post/</loc>
