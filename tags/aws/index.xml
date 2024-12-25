@@ -9,7 +9,7 @@
       <url>https://shekharkoirala.github.io/papermod-cover.png</url>
       <link>https://shekharkoirala.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.7</generator>
+    <generator>Hugo -- 0.135.0</generator>
     <language>en</language>
     <copyright>shekhar koirala</copyright>
     <lastBuildDate>Mon, 20 Nov 2023 21:43:18 +0000</lastBuildDate>
@@ -19,8 +19,21 @@
       <link>https://shekharkoirala.github.io/posts/terraform_aws_python/</link>
       <pubDate>Mon, 20 Nov 2023 21:43:18 +0000</pubDate>
       <guid>https://shekharkoirala.github.io/posts/terraform_aws_python/</guid>
-      <description>This is based on a workshop on Pycon Ireland 2023 given by : Pavlo Tishkin
-Setup AWS account Setup AWS CLI Setup Terraform Setup Python Setup AWS credentials Setup AWS S3 bucket Setup AWS Lambda function Setup AWS CloudWatch event Setup AWS IAM role Setup AWS IAM policy setup lamda function &amp;laquo; updating soon&amp;raquo;</description>
+      <description>&lt;p&gt;This is based on a workshop on Pycon Ireland 2023 given by : Pavlo Tishkin&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Setup AWS account&lt;/li&gt;
+&lt;li&gt;Setup AWS CLI&lt;/li&gt;
+&lt;li&gt;Setup Terraform&lt;/li&gt;
+&lt;li&gt;Setup Python&lt;/li&gt;
+&lt;li&gt;Setup AWS credentials&lt;/li&gt;
+&lt;li&gt;Setup AWS S3 bucket&lt;/li&gt;
+&lt;li&gt;Setup AWS Lambda function&lt;/li&gt;
+&lt;li&gt;Setup AWS CloudWatch event&lt;/li&gt;
+&lt;li&gt;Setup AWS IAM role&lt;/li&gt;
+&lt;li&gt;Setup AWS IAM policy&lt;/li&gt;
+&lt;li&gt;setup lamda function&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&amp;laquo; updating soon&amp;raquo;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

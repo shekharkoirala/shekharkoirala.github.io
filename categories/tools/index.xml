@@ -9,7 +9,7 @@
       <url>https://shekharkoirala.github.io/papermod-cover.png</url>
       <link>https://shekharkoirala.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.7</generator>
+    <generator>Hugo -- 0.135.0</generator>
     <language>en</language>
     <copyright>shekhar koirala</copyright>
     <lastBuildDate>Wed, 13 Sep 2023 11:43:23 +0100</lastBuildDate>
@@ -19,19 +19,86 @@
       <link>https://shekharkoirala.github.io/posts/install_luminance_ubuntu/</link>
       <pubDate>Wed, 13 Sep 2023 11:43:23 +0100</pubDate>
       <guid>https://shekharkoirala.github.io/posts/install_luminance_ubuntu/</guid>
-      <description>How to install luminance HDR in ubuntu install dependecies 1 sudo apt install -y qtcreator qtbase5-dev qt5-qmake cmake libexiv2-dev libtiff-dev libraw-dev libpng-dev libjpeg-dev libopenexr-dev libfftw3-dev libboost-all-dev libcfitsio-dev libgsl-dev This command installs the following dependencies:
-QT5 development tools exiv2 library libtiff library libraw library libpng library libjpeg library libopenexr library fftw3 library libboost library cfitsio library Gnu Gsl library sudo apt install qttools5-dev sudo apt-get install qttools5-dev-tools sudo apt install libqt5webkit5-dev sudo apt-get install libqt5svg5-dev sudo apt-get install libeigen3-dev</description>
+      <description>&lt;h3 id=&#34;how-to-install-luminance-hdr-in-ubuntu&#34;&gt;How to install luminance HDR in ubuntu&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;install dependecies&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install -y qtcreator qtbase5-dev qt5-qmake cmake libexiv2-dev libtiff-dev libraw-dev libpng-dev libjpeg-dev libopenexr-dev libfftw3-dev libboost-all-dev libcfitsio-dev libgsl-dev
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;This command installs the following dependencies:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;QT5 development tools&lt;/li&gt;
+&lt;li&gt;exiv2 library&lt;/li&gt;
+&lt;li&gt;libtiff library&lt;/li&gt;
+&lt;li&gt;libraw library&lt;/li&gt;
+&lt;li&gt;libpng library&lt;/li&gt;
+&lt;li&gt;libjpeg library&lt;/li&gt;
+&lt;li&gt;libopenexr library&lt;/li&gt;
+&lt;li&gt;fftw3 library&lt;/li&gt;
+&lt;li&gt;libboost library&lt;/li&gt;
+&lt;li&gt;cfitsio library&lt;/li&gt;
+&lt;li&gt;Gnu Gsl library&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;sudo apt install qttools5-dev
+sudo apt-get install qttools5-dev-tools
+sudo apt install libqt5webkit5-dev
+sudo apt-get install libqt5svg5-dev
+sudo apt-get install libeigen3-dev&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fujifilm_as_webcam</title>
       <link>https://shekharkoirala.github.io/posts/fujifilm_as_webcam/</link>
       <pubDate>Wed, 24 May 2023 22:07:46 +0100</pubDate>
       <guid>https://shekharkoirala.github.io/posts/fujifilm_as_webcam/</guid>
-      <description>How to use your XT1/2/3/4 fujifilm camera as webcam for your ubuntu 22.04. This is a simple guide to use your fujifilm camera as a webcam.
-Installation: 1 sudo apt-get install gphoto2 v4l2loopback-utils v4l2loopback-dkms ffmpeg modprobe setup
-1 2 3 sudo modprobe -r v4l2loopback sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2 check video sources
-1 ls -l /dev/video* Make sure there is no gphoto process already running:
-1 ps aux | grep gphoto check is camera is detected by gphoto2:</description>
+      <description>&lt;h3 id=&#34;how-to-use-your-xt1234-fujifilm-camera-as-webcam-for-your-ubuntu-2204&#34;&gt;How to use your XT1/2/3/4 fujifilm camera as webcam for your ubuntu 22.04.&lt;/h3&gt;
+&lt;p&gt;This is a simple guide to use your fujifilm camera as a webcam.&lt;/p&gt;
+&lt;h3 id=&#34;installation&#34;&gt;Installation:&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get install gphoto2 v4l2loopback-utils v4l2loopback-dkms ffmpeg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;modprobe setup&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo modprobe -r v4l2loopback
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo modprobe v4l2loopback &lt;span class=&#34;nv&#34;&gt;exclusive_caps&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;max_buffers&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;check video sources&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ls -l /dev/video* 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Make sure there is no gphoto process already running:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ps aux &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep gphoto 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;check is camera is detected by gphoto2:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

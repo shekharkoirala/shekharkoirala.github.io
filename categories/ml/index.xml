@@ -9,7 +9,7 @@
       <url>https://shekharkoirala.github.io/papermod-cover.png</url>
       <link>https://shekharkoirala.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.7</generator>
+    <generator>Hugo -- 0.135.0</generator>
     <language>en</language>
     <copyright>shekhar koirala</copyright>
     <lastBuildDate>Wed, 28 Aug 2024 17:47:41 +0100</lastBuildDate>
@@ -26,7 +26,8 @@
       <link>https://shekharkoirala.github.io/posts/image_clustering_intro/</link>
       <pubDate>Sat, 04 May 2024 14:49:57 +0100</pubDate>
       <guid>https://shekharkoirala.github.io/posts/image_clustering_intro/</guid>
-      <description>Background In this case study, Artificial Intelligence based system is used to take buisness decisions. The study is based on a e-commerce company which ingest lots of data like images, quarterly reports, invoices, customer feedbacks, customer reviews with images, etc. It would be great if this large amount of data is automatically categorized or grouped together. Previously, a machine learning team in the company had created a model to classify the input data.</description>
+      <description>&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;
+&lt;p&gt;In this case study, Artificial Intelligence based system is used to take buisness decisions. The study is based on a e-commerce company which ingest lots of data like images, quarterly reports, invoices, customer feedbacks, customer reviews with images, etc. It would be great if this large amount of data is automatically categorized or grouped together. Previously, a machine learning team in the company had created a model to classify the input data. But the nature of the e-commerce data, new product launches, new customer feedbacks, etc. are not predictable. Thus, the model needs to be retrained frequently. The company is looking for a solution that can automatically perform and help the analyst to get the insight from the unstructured data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Data_sourcing_ml</title>
