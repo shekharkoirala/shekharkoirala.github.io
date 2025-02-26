@@ -15,11 +15,12 @@
     <lastBuildDate>Tue, 25 Feb 2025 19:16:40 +0000</lastBuildDate>
     <atom:link href="https://shekharkoirala.github.io/tags/mlops/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mlops_1</title>
+      <title>Robust MlOps infrastructure</title>
       <link>https://shekharkoirala.github.io/posts/mlops_1/</link>
       <pubDate>Tue, 25 Feb 2025 19:16:40 +0000</pubDate>
       <guid>https://shekharkoirala.github.io/posts/mlops_1/</guid>
-      <description>Building A Robust MlOps infrastructure</description>
+      <description>Building A Robust MlOps infrastructure 
+</description>
     </item>
   </channel>
 </rss>
