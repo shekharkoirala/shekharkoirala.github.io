@@ -12,8 +12,15 @@
     <generator>Hugo -- 0.135.0</generator>
     <language>en</language>
     <copyright>shekhar koirala</copyright>
-    <lastBuildDate>Wed, 25 Dec 2024 15:52:11 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2025 19:16:40 +0000</lastBuildDate>
     <atom:link href="https://shekharkoirala.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mlops_1</title>
+      <link>https://shekharkoirala.github.io/posts/mlops_1/</link>
+      <pubDate>Tue, 25 Feb 2025 19:16:40 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/posts/mlops_1/</guid>
+      <description>Building A Robust MlOps infrastructure</description>
+    </item>
     <item>
       <title>Top 50 SQL for Mastery</title>
       <link>https://shekharkoirala.github.io/posts/sql_50/</link>

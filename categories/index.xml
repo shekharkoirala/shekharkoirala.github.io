@@ -12,8 +12,15 @@
     <generator>Hugo -- 0.135.0</generator>
     <language>en</language>
     <copyright>shekhar koirala</copyright>
-    <lastBuildDate>Wed, 25 Dec 2024 15:52:11 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2025 19:16:40 +0000</lastBuildDate>
     <atom:link href="https://shekharkoirala.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mlops</title>
+      <link>https://shekharkoirala.github.io/categories/mlops/</link>
+      <pubDate>Tue, 25 Feb 2025 19:16:40 +0000</pubDate>
+      <guid>https://shekharkoirala.github.io/categories/mlops/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Interview</title>
       <link>https://shekharkoirala.github.io/categories/interview/</link>

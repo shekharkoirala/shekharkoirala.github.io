@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" />
+  
+  <!-- Data Storage -->
+  <rect x="50" y="50" width="100" height="60" rx="5" fill="#A8DADC" stroke="#457B9D" stroke-width="2" />
+  <text x="100" y="85" font-family="Arial" font-size="14" text-anchor="middle" fill="#1D3557">S3 / Data Lake</text>
+  
+  <!-- Workflow Orchestration -->
+  <rect x="350" y="50" width="120" height="60" rx="5" fill="#F1FAEE" stroke="#457B9D" stroke-width="2" />
+  <text x="410" y="75" font-family="Arial" font-size="14" text-anchor="middle" fill="#1D3557">Workflow Orchestration</text>
+  <text x="410" y="95" font-family="Arial" font-size="12" text-anchor="middle" fill="#1D3557">Airflow/Prefect/Flyte</text>
+  
+  <!-- Model Registry -->
+  <rect x="650" y="50" width="100" height="60" rx="5" fill="#A8DADC" stroke="#457B9D" stroke-width="2" />
+  <text x="700" y="85" font-family="Arial" font-size="14" text-anchor="middle" fill="#1D3557">Model Registry</text>
+  
+  <!-- Arrows from Storage to Orchestration -->
+  <path d="M150 80 L350 80" stroke="#457B9D" stroke-width="2" fill="none" />
+  <polygon points="345,75 355,80 345,85" fill="#457B9D" />
+  
+  <!-- Arrows from Orchestration to Registry -->
+  <path d="M470 80 L650 80" stroke="#457B9D" stroke-width="2" fill="none" />
+  <polygon points="645,75 655,80 645,85" fill="#457B9D" />
+  
+  <!-- Testing Workflow -->
+  <rect x="200" y="150" width="400" height="80" rx="5" fill="#F1FAEE" stroke="#457B9D" stroke-width="2" />
+  <text x="400" y="180" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#1D3557">Model Testing Workflow</text>
+  <text x="400" y="205" font-family="Arial" font-size="12" text-anchor="middle" fill="#1D3557">Critical Test Data Evaluation • Performance Metrics • Validation</text>
+  
+  <!-- Drift Detection -->
+  <rect x="200" y="250" width="400" height="80" rx="5" fill="#F1FAEE" stroke="#457B9D" stroke-width="2" />
+  <text x="400" y="280" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#1D3557">Drift Detection Workflow</text>
+  <text x="400" y="305" font-family="Arial" font-size="12" text-anchor="middle" fill="#1D3557">Statistical Analysis • Distribution Comparison • Alert Generation</text>
+  
+  <!-- Model Serving -->
+  <rect x="200" y="350" width="400" height="80" rx="5" fill="#F1FAEE" stroke="#457B9D" stroke-width="2" />
+  <text x="400" y="380" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#1D3557">Model Serving Infrastructure</text>
+  <text x="400" y="405" font-family="Arial" font-size="12" text-anchor="middle" fill="#1D3557">Canary Deployment • Scaling • Monitoring • Rollback Capabilities</text>
+  
+  <!-- Line from Registry to all three workflows -->
+  <path d="M700 110 L700 190 L600 190" stroke="#457B9D" stroke-width="2" stroke-dasharray="4" fill="none" />
+  <path d="M700 190 L700 290 L600 290" stroke="#457B9D" stroke-width="2" stroke-dasharray="4" fill="none" />
+  <path d="M700 290 L700 390 L600 390" stroke="#457B9D" stroke-width="2" stroke-dasharray="4" fill="none" />
+  
+  <!-- Line from Orchestration to all three workflows -->
+  <path d="M410 110 L410 150" stroke="#457B9D" stroke-width="2" fill="none" />
+  <path d="M410 230 L410 250" stroke="#457B9D" stroke-width="2" fill="none" />
+  <path d="M410 330 L410 350" stroke="#457B9D" stroke-width="2" fill="none" />
+</svg>

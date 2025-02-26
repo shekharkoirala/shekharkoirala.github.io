@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" />
+  
+  <!-- Databricks Platform -->
+  <rect x="200" y="30" width="400" height="120" rx="10" fill="#FF3621" fill-opacity="0.1" stroke="#FF3621" stroke-width="2" />
+  <text x="400" y="60" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#FF3621">Databricks Unified Analytics Platform</text>
+  
+  <!-- Databricks Components -->
+  <rect x="220" y="80" width="100" height="50" rx="5" fill="#FFFFFF" stroke="#FF3621" stroke-width="1" />
+  <text x="270" y="110" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Delta Lake</text>
+  
+  <rect x="350" y="80" width="100" height="50" rx="5" fill="#FFFFFF" stroke="#FF3621" stroke-width="1" />
+  <text x="400" y="110" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">MLflow</text>
+  
+  <rect x="480" y="80" width="100" height="50" rx="5" fill="#FFFFFF" stroke="#FF3621" stroke-width="1" />
+  <text x="530" y="110" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">Databricks Jobs</text>
+  
+  <!-- MLOps Workflows -->
+  <rect x="100" y="200" width="600" height="250" rx="10" fill="#E9ECEF" stroke="#666" stroke-width="1" />
+  <text x="400" y="220" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">MLOps Workflows</text>
+  
+  <!-- ML Workflows -->
+  <rect x="130" y="240" width="160" height="60" rx="5" fill="#FFFFFF" stroke="#666" stroke-width="1" />
+  <text x="210" y="275" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Data Engineering</text>
+  
+  <rect x="130" y="320" width="160" height="60" rx="5" fill="#FFFFFF" stroke="#666" stroke-width="1" />
+  <text x="210" y="355" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Experimentation</text>
+  
+  <rect x="130" y="400" width="160" height="60" rx="5" fill="#FFFFFF" stroke="#666" stroke-width="1" />
+  <text x="210" y="435" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Model Training</text>
+  
+  <rect x="320" y="240" width="160" height="60" rx="5" fill="#FFFFFF" stroke="#666" stroke-width="1" />
+  <text x="400" y="275" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">CI/CD Pipelines</text>
+  
+  <rect x="320" y="320" width="160" height="60" rx="5" fill="#FFFFFF" stroke="#666" stroke-width="1" />
+  <text x="400" y="355" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Feature Store</text>
+  
+  <rect x="320" y="400" width="160" height="60" rx="5" fill="#FFFFFF" stroke="#666" stroke-width="1" />
+  <text x="400" y="435" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Model Registry</text>
+  
+  <rect x="510" y="240" width="160" height="60" rx="5" fill="#FFFFFF" stroke="#666" stroke-width="1" />
+  <text x="590" y="275" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Monitoring</text>
+  
+  <rect x="510" y="320" width="160" height="60" rx="5" fill="#FFFFFF" stroke="#666" stroke-width="1" />
+  <text x="590" y="355" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Inference</text>
+  
+  <rect x="510" y="400" width="160" height="60" rx="5" fill="#FFFFFF" stroke="#666" stroke-width="1" />
+  <text x="590" y="435" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Governance</text>
+  
+  <!-- Arrows from Databricks to Workflows -->
+  <path d="M270 130 L210 240" stroke="#FF3621" stroke-width="2" fill="none" />
+  <path d="M270 130 L210 320" stroke="#FF3621" stroke-width="2" fill="none" />
+  <path d="M270 130 L210 400" stroke="#FF3621" stroke-width="2" fill="none" />
+  
+  <path d="M400 130 L400 240" stroke="#FF3621" stroke-width="2" fill="none" />
+  <path d="M400 130 L400 320" stroke="#FF3621" stroke-width="2" fill="none" />
+  <path d="M400 130 L400 400" stroke="#FF3621" stroke-width="2" fill="none" />
+  
+  <path d="M530 130 L590 240" stroke="#FF3621" stroke-width="2" fill="none" />
+  <path d="M530 130 L590 320" stroke="#FF3621" stroke-width="2" fill="none" />
+  <path d="M530 130 L590 400" stroke="#FF3621" stroke-width="2" fill="none" />
+
+  <!-- Title -->
+  <text x="400" y="480" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" fill="#333">End-to-End MLOps with Databricks Integration</text>
+</svg>

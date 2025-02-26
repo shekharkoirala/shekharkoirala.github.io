@@ -2,8 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://shekharkoirala.github.io/tags/architecture/</loc>
+    <lastmod>2025-02-25T19:16:40+00:00</lastmod>
+  </url><url>
     <loc>https://shekharkoirala.github.io/categories/</loc>
-    <lastmod>2024-12-25T15:52:11+00:00</lastmod>
+    <lastmod>2025-02-25T19:16:40+00:00</lastmod>
+  </url><url>
+    <loc>https://shekharkoirala.github.io/categories/mlops/</loc>
+    <lastmod>2025-02-25T19:16:40+00:00</lastmod>
+  </url><url>
+    <loc>https://shekharkoirala.github.io/tags/mlops/</loc>
+    <lastmod>2025-02-25T19:16:40+00:00</lastmod>
+  </url><url>
+    <loc>https://shekharkoirala.github.io/posts/mlops_1/</loc>
+    <lastmod>2025-02-25T19:16:40+00:00</lastmod>
+  </url><url>
+    <loc>https://shekharkoirala.github.io/posts/</loc>
+    <lastmod>2025-02-25T19:16:40+00:00</lastmod>
+  </url><url>
+    <loc>https://shekharkoirala.github.io/</loc>
+    <lastmod>2025-02-25T19:16:40+00:00</lastmod>
+  </url><url>
+    <loc>https://shekharkoirala.github.io/tags/</loc>
+    <lastmod>2025-02-25T19:16:40+00:00</lastmod>
   </url><url>
     <loc>https://shekharkoirala.github.io/categories/interview/</loc>
     <lastmod>2024-12-25T15:52:11+00:00</lastmod>
@@ -11,16 +32,7 @@
     <loc>https://shekharkoirala.github.io/tags/pandas/</loc>
     <lastmod>2024-12-25T15:52:11+00:00</lastmod>
   </url><url>
-    <loc>https://shekharkoirala.github.io/posts/</loc>
-    <lastmod>2024-12-25T15:52:11+00:00</lastmod>
-  </url><url>
-    <loc>https://shekharkoirala.github.io/</loc>
-    <lastmod>2024-12-25T15:52:11+00:00</lastmod>
-  </url><url>
     <loc>https://shekharkoirala.github.io/tags/sql/</loc>
-    <lastmod>2024-12-25T15:52:11+00:00</lastmod>
-  </url><url>
-    <loc>https://shekharkoirala.github.io/tags/</loc>
     <lastmod>2024-12-25T15:52:11+00:00</lastmod>
   </url><url>
     <loc>https://shekharkoirala.github.io/posts/sql_50/</loc>
