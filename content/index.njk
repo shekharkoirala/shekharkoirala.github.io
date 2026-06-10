@@ -1,0 +1,78 @@
+---js
+{
+  layout: "layouts/base.njk",
+  eleventyNavigation: { key: "Home", order: 1 }
+}
+---
+
+<section class="home-hero">
+	<h1>Dump Docs</h1>
+	<p class="hero-sub">Notes on ML, AI, photography, and things I figure out along the way.</p>
+</section>
+
+<section class="home-posts">
+	<div class="home-posts-header">
+		<h2 id="posts-heading">All Posts</h2>
+		<p class="filter-hint" id="filter-hint">Hover a category in the sidebar to filter &#8592;</p>
+	</div>
+
+	<ul class="postlist home-postlist" id="postlist">
+		{%- for post in collections.posts | reverse %}
+		<li class="postlist-item" data-group="{{ post.data.categoryGroup | slugify }}">
+			<a href="{{ post.url }}" class="postlist-link">{{ post.data.title }}</a>
+			<div class="postlist-meta">
+				<time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+				{%- if post.data.categoryGroup %}
+				<a href="/categories/{{ post.data.categoryGroup | slugify }}/" class="post-category">{{ post.data.categoryGroup }}</a>
+				{%- endif %}
+			</div>
+			{%- if post.data.description %}
+			<p class="postlist-desc">{{ post.data.description }}</p>
+			{%- endif %}
+		</li>
+		{%- endfor %}
+	</ul>
+</section>
+
+<script>
+(function() {
+	const postItems = document.querySelectorAll('#postlist .postlist-item');
+	const heading = document.getElementById('posts-heading');
+	const hint = document.getElementById('filter-hint');
+	const catLinks = document.querySelectorAll('.sidebar .category-link');
+
+	function filterPosts(group, label) {
+		let shown = 0;
+		postItems.forEach(item => {
+			if (!group || group === 'all') {
+				item.style.display = '';
+				shown++;
+			} else {
+				const match = item.dataset.group === group;
+				item.style.display = match ? '' : 'none';
+				if (match) shown++;
+			}
+		});
+		if (heading) {
+			heading.textContent = (!group || group === 'all') ? 'All Posts' : label;
+		}
+		if (hint) {
+			hint.textContent = (!group || group === 'all')
+				? 'Hover a category in the sidebar to filter ←'
+				: shown + ' post' + (shown === 1 ? '' : 's') + ' in ' + label;
+		}
+	}
+
+	catLinks.forEach(link => {
+		link.addEventListener('mouseenter', () => {
+			const g = link.dataset.category;
+			filterPosts(g === 'all' ? null : g, link.textContent.trim());
+		});
+	});
+
+	const sidebar = document.getElementById('sidebar');
+	if (sidebar) {
+		sidebar.addEventListener('mouseleave', () => filterPosts(null));
+	}
+})();
+</script>

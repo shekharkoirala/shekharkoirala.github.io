@@ -1,0 +1,41 @@
+---js
+// <script>
+const pagination = {
+	data: "collections.categoryGroups",
+	size: 1,
+	alias: "group",
+	addAllPagesToCollections: false,
+};
+
+const eleventyExcludeFromCollections = true;
+const layout = "layouts/base.njk";
+
+const eleventyComputed = {
+	title: data => `${data.group}`,
+	// Use Eleventy's own slugify so these URLs match the sidebar's
+	// `{{ group | slugify }}` links exactly (e.g. "AI & Data" -> "ai-and-data").
+	permalink: function(data) {
+		return `/categories/${this.slugify(data.group)}/`;
+	},
+};
+---
+<h1>{{ group }}</h1>
+<p class="category-intro">All posts in <strong>{{ group }}</strong>.</p>
+
+<ul class="postlist">
+{%- for post in collections.posts | reverse %}
+{%- if post.data.categoryGroup == group %}
+<li class="postlist-item">
+	<a href="{{ post.url }}" class="postlist-link">{{ post.data.title }}</a>
+	<div class="postlist-meta">
+		<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+	</div>
+	{%- if post.data.description %}
+	<p class="postlist-desc">{{ post.data.description }}</p>
+	{%- endif %}
+</li>
+{%- endif %}
+{%- endfor %}
+</ul>
+
+<p><a href="/blog/">&#8592; All Posts</a></p>

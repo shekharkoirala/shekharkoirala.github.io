@@ -1,0 +1,59 @@
+---js
+{
+  layout: "layouts/base.njk",
+  eleventyNavigation: { key: "Archive", order: 2 },
+  pagination: {
+    data: "collections.posts",
+    size: 8,
+    alias: "posts",
+    reverse: true
+  },
+  // First page is /blog/, subsequent pages /blog/page/2/ etc.
+  permalink: function(data) {
+    const n = data.pagination.pageNumber;
+    return n === 0 ? "/blog/" : `/blog/page/${n + 1}/`;
+  },
+  eleventyComputed: {
+    title: data => data.pagination.pageNumber === 0
+      ? "All Posts"
+      : `All Posts — Page ${data.pagination.pageNumber + 1}`
+  }
+}
+---
+<h1>All Posts</h1>
+
+<ul class="postlist">
+{%- for post in posts %}
+<li class="postlist-item">
+	<a href="{{ post.url }}" class="postlist-link">{{ post.data.title }}</a>
+	<div class="postlist-meta">
+		<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+		{%- if post.data.categoryGroup %}
+		<a href="/categories/{{ post.data.categoryGroup | slugify }}/" class="post-category">{{ post.data.categoryGroup }}</a>
+		{%- endif %}
+	</div>
+	{%- if post.data.description %}
+	<p class="postlist-desc">{{ post.data.description }}</p>
+	{%- endif %}
+</li>
+{%- endfor %}
+</ul>
+
+{# Pagination controls #}
+{%- if pagination.pages.length > 1 %}
+<nav class="pagination" aria-label="Pagination">
+	{%- if pagination.href.previous %}
+	<a href="{{ pagination.href.previous }}" class="page-link">&#8592; Newer</a>
+	{%- else %}
+	<span class="page-link disabled">&#8592; Newer</span>
+	{%- endif %}
+
+	<span class="page-count">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</span>
+
+	{%- if pagination.href.next %}
+	<a href="{{ pagination.href.next }}" class="page-link">Older &#8594;</a>
+	{%- else %}
+	<span class="page-link disabled">Older &#8594;</span>
+	{%- endif %}
+</nav>
+{%- endif %}

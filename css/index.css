@@ -1,0 +1,729 @@
+/* =====================================================================
+   Variables & Reset
+   Palette: #2C3930 (dark green) #3F4F44 (green-gray) #A27B5C (tan) #DCD7C9 (cream)
+   ===================================================================== */
+:root {
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "SF Mono", "Fira Code", "Cascadia Code", Consolas, monospace;
+  --sidebar-width: 230px;
+  --syntax-tab-size: 2;
+}
+
+/* DARK theme (default) */
+:root,
+[data-theme="dark"] {
+  --bg: #2C3930;
+  --content-bg: #2C3930;
+  --sidebar-bg: #232c25;
+  --surface: #3F4F44;
+  --border-color: #46564b;
+
+  --text: #DCD7C9;
+  --text-muted: #a7a596;
+  --text-heading: #f0ece1;
+
+  --accent: #A27B5C;
+  --accent-hover: #bb9070;
+  --accent-dim: #3a4a3f;
+
+  --link: #c79a73;
+  --link-hover: #d8b48f;
+  --link-visited: #b08a6a;
+
+  --tag-bg: #3a4a3f;
+  --tag-text: #cBa183;
+  --code-bg: #20281f;
+}
+
+/* LIGHT theme */
+[data-theme="light"] {
+  --bg: #DCD7C9;
+  --content-bg: #DCD7C9;
+  --sidebar-bg: #d2ccba;
+  --surface: #e6e2d6;
+  --border-color: #c3bca8;
+
+  --text: #2C3930;
+  --text-muted: #5d6b5f;
+  --text-heading: #2C3930;
+
+  --accent: #A27B5C;
+  --accent-hover: #8a6647;
+  --accent-dim: #cfc8b6;
+
+  --link: #8a6647;
+  --link-hover: #6f4f34;
+  --link-visited: #7a5a3e;
+
+  --tag-bg: #cfc8b6;
+  --tag-text: #6f4f34;
+  --code-bg: #2C3930;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background: var(--content-bg);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.6;
+}
+html { overflow-y: scroll; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+a[href] { color: var(--link); text-decoration: none; }
+a[href]:hover { color: var(--link-hover); text-decoration: underline; }
+
+/* =====================================================================
+   Two-column layout
+   ===================================================================== */
+.site-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* =====================================================================
+   Sidebar
+   ===================================================================== */
+.sidebar {
+  width: var(--sidebar-width);
+  min-width: var(--sidebar-width);
+  background: var(--sidebar-bg);
+  border-right: 1px solid var(--border-color);
+  padding: 1.5rem 1rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.sidebar-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.site-title {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.25rem;
+}
+.site-title:hover { color: var(--link-hover); }
+
+.site-tagline {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.sidebar-nav { display: flex; flex-direction: column; gap: 0.25rem; flex: 1; }
+
+.nav-section { margin-bottom: 0.75rem; }
+
+.nav-heading {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0.75rem 0 0.35rem;
+}
+
+.category-link,
+.nav-page-link {
+  display: block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: background 0.12s, color 0.12s;
+  cursor: pointer;
+}
+.category-link:hover,
+.nav-page-link:hover,
+.category-link.active,
+.nav-page-link.active {
+  background: var(--accent-dim);
+  color: var(--text-heading);
+  text-decoration: none;
+}
+
+.nav-divider {
+  height: 1px;
+  background: var(--border-color);
+  margin: 0.75rem 0;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.social-links {
+  display: flex;
+  gap: 0.4rem;
+}
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+.social-links a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-dim);
+}
+
+/* Theme toggle */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-muted);
+  padding: 0.4rem 0.7rem;
+  font-size: 0.8rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-dim); }
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: inline; }
+[data-theme="light"] .theme-toggle .icon-sun { display: inline; }
+[data-theme="light"] .theme-toggle .icon-moon { display: none; }
+
+/* =====================================================================
+   Content area
+   ===================================================================== */
+.content-area {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  display: none; /* hidden on desktop */
+}
+
+.main-content {
+  max-width: 780px;
+  width: 100%;
+  padding: 2rem 2.5rem;
+  flex: 1;
+}
+
+.site-footer {
+  padding: 1rem 2.5rem;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+.site-footer a { color: var(--text-muted); }
+.site-footer a:hover { color: var(--link-hover); }
+
+/* =====================================================================
+   Home page
+   ===================================================================== */
+.home-hero {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.home-hero h1 {
+  font-size: 2rem;
+  margin: 0 0 0.4rem;
+  color: var(--text-heading);
+  letter-spacing: -0.03em;
+}
+.hero-sub {
+  color: var(--text-muted);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.home-postlist { list-style: none; padding: 0; margin: 0; }
+.home-postlist .postlist-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+  transition: opacity 0.15s;
+}
+.home-postlist .postlist-item[style*="none"] { display: none !important; }
+
+.postlist-link {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-heading);
+  margin-bottom: 0.25rem;
+}
+.postlist-link:hover { color: var(--link-hover); }
+
+.postlist-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 0.3rem;
+}
+.postlist-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* =====================================================================
+   Post page
+   ===================================================================== */
+.post-cover {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+.post-header { margin-bottom: 1.5rem; }
+.post-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  line-height: 1.25;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+.meta-sep { opacity: 0.5; }
+.post-tags { margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.35rem; }
+
+.post-content { font-size: 0.97rem; line-height: 1.75; }
+.post-content h1, .post-content h2, .post-content h3 {
+  color: var(--text-heading);
+  letter-spacing: -0.01em;
+  margin-top: 1.8em;
+}
+.post-content h2 { font-size: 1.35rem; }
+.post-content h3 { font-size: 1.1rem; }
+.post-content p { margin: 0.9em 0; }
+.post-content ul, .post-content ol { padding-left: 1.5rem; }
+.post-content li { margin: 0.3rem 0; }
+.post-content blockquote {
+  border-left: 3px solid var(--accent);
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  background: var(--sidebar-bg);
+  border-radius: 0 6px 6px 0;
+  color: var(--text-muted);
+}
+.post-content table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+.post-content th, .post-content td {
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+.post-content th { background: var(--sidebar-bg); color: var(--text-heading); }
+
+/* =====================================================================
+   Code blocks
+   ===================================================================== */
+pre, code { font-family: var(--font-mono); }
+code {
+  background: var(--sidebar-bg);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.87em;
+  word-break: break-all;
+}
+pre code { background: none; padding: 0; word-break: normal; }
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.25rem;
+  overflow-x: auto;
+  line-height: 1.5;
+  margin: 1.25em 0;
+  tab-size: var(--syntax-tab-size);
+  font-size: 0.875em;
+}
+
+/* =====================================================================
+   Tags & categories pills
+   ===================================================================== */
+.post-tag, .post-category {
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.post-tag {
+  background: var(--tag-bg);
+  color: var(--tag-text);
+}
+.post-category {
+  background: var(--accent);
+  color: #fff;
+}
+[data-theme="light"] .post-category { color: #fff; }
+.post-tag:hover, .post-category:hover {
+  opacity: 0.85;
+  text-decoration: none;
+}
+
+/* =====================================================================
+   Post nav (prev/next)
+   ===================================================================== */
+.links-nextprev {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.85rem;
+}
+.links-nextprev-next { text-align: right; }
+.links-nextprev span { color: var(--text-muted); display: block; margin-bottom: 0.2rem; }
+
+/* =====================================================================
+   Tags page / generic lists
+   ===================================================================== */
+.postlist {
+  list-style: none;
+  padding: 0;
+}
+.postlist-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+.postlist-date {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+h1 { color: var(--text-heading); font-size: 1.6rem; margin-top: 0; letter-spacing: -0.02em; }
+h2 { color: var(--text-heading); font-size: 1.3rem; }
+h3 { color: var(--text-heading); font-size: 1.05rem; }
+
+/* =====================================================================
+   Home posts header + filter hint
+   ===================================================================== */
+.home-posts-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+.home-posts-header h2 { margin: 0; }
+.filter-hint {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin: 0;
+  font-style: italic;
+}
+
+/* =====================================================================
+   Pagination
+   ===================================================================== */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-color);
+}
+.page-link {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: var(--link);
+  text-decoration: none;
+  transition: background 0.12s, border-color 0.12s;
+}
+.page-link:hover { background: var(--accent-dim); border-color: var(--accent); text-decoration: none; }
+.page-link.disabled { color: var(--text-muted); opacity: 0.4; pointer-events: none; }
+.page-count { font-size: 0.8rem; color: var(--text-muted); }
+
+/* =====================================================================
+   About page
+   ===================================================================== */
+.about-page { max-width: 640px; }
+.about-page h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 1.2rem;
+}
+.about-page table { width: auto; min-width: 60%; }
+.about-page ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.about-page ul li a {
+  display: inline-block;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+.about-page ul li a:hover { background: var(--accent-dim); border-color: var(--accent); text-decoration: none; }
+
+.category-intro { color: var(--text-muted); font-size: 0.9rem; margin-top: -0.25rem; }
+
+/* =====================================================================
+   Tag cloud
+   ===================================================================== */
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* =====================================================================
+   Accessibility
+   ===================================================================== */
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+#skip-link {
+  background: var(--content-bg);
+  color: var(--text);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+/* =====================================================================
+   Mobile
+   ===================================================================== */
+.sidebar-toggle { display: none; }
+.mobile-title { display: none; }
+
+@media (max-width: 768px) {
+  .site-wrapper { display: block; }
+
+  .sidebar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 100vh;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    width: 260px;
+    min-width: 0;
+  }
+  .sidebar.open { transform: translateX(0); box-shadow: 4px 0 20px rgba(0,0,0,0.5); }
+
+  .top-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--sidebar-bg);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .sidebar-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 0.25rem;
+  }
+
+  .mobile-title {
+    display: block;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-heading);
+    text-decoration: none;
+  }
+
+  .main-content { padding: 1.25rem 1rem; }
+  .site-footer { padding: 1rem; }
+  .post-title { font-size: 1.4rem; }
+}
+
+/* =====================================================================
+   Computer Modern (LaTeX) font — used for the CV
+   ===================================================================== */
+@font-face {
+  font-family: "Computer Modern";
+  src: url("/fonts/KaTeX_Main-Regular.woff2") format("woff2");
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url("/fonts/KaTeX_Main-Bold.woff2") format("woff2");
+  font-weight: bold; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url("/fonts/KaTeX_Main-Italic.woff2") format("woff2");
+  font-weight: normal; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url("/fonts/KaTeX_Main-BoldItalic.woff2") format("woff2");
+  font-weight: bold; font-style: italic; font-display: swap;
+}
+
+/* =====================================================================
+   CV (LaTeX-style, two A4 pages)
+   ===================================================================== */
+.page-cv .main-content { max-width: none; padding: 1.5rem 1.5rem 3rem; }
+
+.cv-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 210mm;
+  margin: 0 auto 1.25rem;
+}
+.cv-toolbar h1 { margin: 0; font-size: 1.4rem; }
+.cv-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.cv-download:hover { background: var(--accent-hover); color: #fff; text-decoration: none; }
+
+.cv-wrap { margin: 0 auto; }
+.cv-page {
+  width: 210mm;
+  max-width: 100%;
+  min-height: 297mm;
+  background: #fdfdfa;
+  color: #1b1b1b;
+  padding: 16mm 18mm;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 8px 34px rgba(0,0,0,0.4);
+  border-radius: 2px;
+  font-family: "Computer Modern", "Latin Modern Roman", Georgia, serif;
+  font-size: 10.8pt;
+  line-height: 1.36;
+  box-sizing: border-box;
+}
+
+.cv-head { text-align: center; margin-bottom: 0.6rem; }
+.cv-name { font-size: 21pt; font-weight: bold; letter-spacing: 0.01em; margin: 0; color: #111; }
+.cv-role { font-size: 12pt; font-style: italic; margin: 0.15rem 0 0.4rem; color: #333; }
+.cv-contact { font-size: 9.6pt; color: #333; }
+.cv-contact a { color: #5a3d28; text-decoration: none; }
+.cv-contact a:hover { text-decoration: underline; }
+.cv-contact .sep { margin: 0 0.45em; color: #999; }
+
+.cv-section { margin-top: 0.9rem; }
+.cv-page .ha-placeholder,
+.cv-page .ha-anchor { display: none !important; }
+.cv-section > h2 {
+  font-size: 11.5pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #111;
+  margin: 0 0 0.35rem;
+  padding-bottom: 2px;
+  border-bottom: 0.8pt solid #222;
+}
+.cv-entry { margin-bottom: 0.55rem; }
+.cv-entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+.cv-entry-title { font-weight: bold; color: #111; }
+.cv-entry-org { font-style: italic; }
+.cv-entry-date { font-size: 9.6pt; color: #444; white-space: nowrap; }
+.cv-page ul { margin: 0.2rem 0 0.2rem; padding-left: 1.15rem; }
+.cv-page li { margin: 0.12rem 0; }
+.cv-summary { margin: 0.2rem 0 0; text-align: justify; }
+.cv-skills-grid { display: grid; grid-template-columns: auto 1fr; gap: 0.15rem 0.8rem; }
+.cv-skills-grid dt { font-weight: bold; color: #111; }
+.cv-skills-grid dd { margin: 0; }
+.cv-pagefoot { text-align: center; font-size: 8.4pt; color: #888; margin-top: 1rem; }
+
+@media (max-width: 760px) {
+  .cv-page { padding: 8mm 7mm; font-size: 10pt; }
+  .cv-name { font-size: 18pt; }
+}
+
+/* Print: only the CV pages, at true A4 */
+@media print {
+  @page { size: A4; margin: 0; }
+  body * { visibility: hidden; }
+  .cv-wrap, .cv-wrap * { visibility: visible; }
+  .cv-wrap { position: absolute; left: 0; top: 0; width: 100%; }
+  .cv-page {
+    width: 210mm; min-height: 297mm; margin: 0; box-shadow: none;
+    border-radius: 0; page-break-after: always; break-after: page;
+  }
+  .cv-page:last-child { page-break-after: auto; break-after: auto; }
+}

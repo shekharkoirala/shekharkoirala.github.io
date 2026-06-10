@@ -1,0 +1,13 @@
+---js
+const eleventyNavigation = { key: "Tags", order: 3 };
+const layout = "layouts/base.njk";
+const title = "Tags";
+---
+<h1>Tags</h1>
+<p class="category-intro">Browse posts by topic.</p>
+
+<div class="tag-cloud">
+{%- for tag in collections.tagList %}
+	<a href="/tags/{{ tag.key | slugify }}/" class="post-tag">{{ tag.name }} <span class="tag-count">{{ tag.posts.length }}</span></a>
+{%- endfor %}
+</div>
