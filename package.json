@@ -41,6 +41,7 @@
 		"@11ty/eleventy-plugin-rss": "^3.0.0",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
 		"cross-env": "^10.1.0",
+		"image-size": "^2.0.2",
 		"jsdom": "^29.1.1",
 		"luxon": "^3.7.2",
 		"prismjs": "^1.30.0",
