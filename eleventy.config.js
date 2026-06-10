@@ -6,6 +6,9 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 import pluginFilters from "./_config/filters.js";
 import { order as groupOrder } from "./_data/categoryGroups.js";
+import { imageSize } from "image-size";
+import { readFileSync } from "node:fs";
+import path from "node:path";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -100,6 +103,29 @@ export default async function(eleventyConfig) {
 
 	eleventyConfig.addShortcode("currentBuildDate", () => {
 		return (new Date()).toISOString();
+	});
+
+	// Add intrinsic width/height (and decoding) to local markdown images so the
+	// browser reserves space before they load — eliminates layout shift (CLS).
+	eleventyConfig.amendLibrary("md", (mdLib) => {
+		const fallback = (tokens, idx, options, env, self) => self.renderToken(tokens, idx, options);
+		const baseImage = mdLib.renderer.rules.image || fallback;
+		mdLib.renderer.rules.image = (tokens, idx, options, env, self) => {
+			const token = tokens[idx];
+			const src = token.attrGet("src");
+			if (src && src.startsWith("/images/") && !token.attrGet("width")) {
+				try {
+					const buf = readFileSync(path.join("public", src));
+					const { width, height } = imageSize(buf);
+					if (width && height) {
+						token.attrSet("width", String(width));
+						token.attrSet("height", String(height));
+						token.attrSet("decoding", "async");
+					}
+				} catch (e) { /* image not found locally — skip */ }
+			}
+			return baseImage(tokens, idx, options, env, self);
+		};
 	});
 
 	// Case-insensitive, de-duplicated tag list. Avoids slug collisions when the
