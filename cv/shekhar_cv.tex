@@ -1,0 +1,126 @@
+% Shekhar Koirala — Curriculum Vitae
+% This is the true LaTeX source for the CV shown on the /about/ page.
+% Compile with:  pdflatex shekhar_cv.tex   (or use Overleaf)
+% The website mirrors this layout in HTML using the Computer Modern web font;
+% keep the two in sync when you update your CV.
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[margin=1.6cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+% Default Computer Modern font (no font package = classic LaTeX look)
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+\definecolor{rule}{RGB}{34,34,34}
+
+% Section styling: small caps, uppercase, underlined
+\titleformat{\section}
+  {\large\bfseries\scshape}
+  {}{0pt}{}[\vspace{-0.6em}\rule{\linewidth}{0.8pt}]
+\titlespacing{\section}{0pt}{1.0em}{0.5em}
+
+\newcommand{\entry}[2]{%
+  \noindent\textbf{#1}\hfill{\small #2}\par
+}
+\newcommand{\role}[3]{%
+  \noindent\textbf{#1}, \textit{#2}\hfill{\small #3}\par
+}
+
+\setlist[itemize]{leftmargin=1.3em, topsep=2pt, itemsep=1pt, parsep=0pt}
+
+\begin{document}
+
+% ---------- Header ----------
+\begin{center}
+  {\LARGE\bfseries Shekhar Koirala}\\[2pt]
+  {\large\itshape Machine Learning Engineer}\\[4pt]
+  {\small Dublin, Ireland \quad|\quad
+   \href{mailto:shekharkoirala4@gmail.com}{shekharkoirala4@gmail.com} \quad|\quad
+   \href{https://shekharkoirala.github.io}{shekharkoirala.github.io}}\\[1pt]
+  {\small \href{https://github.com/shekharkoirala}{github.com/shekharkoirala} \quad|\quad
+   \href{https://linkedin.com/in/shekharkoirala}{linkedin.com/in/shekharkoirala}}
+\end{center}
+
+% ---------- Summary ----------
+\section{Summary}
+Machine Learning Engineer with a strong software-engineering foundation, focused on
+taking ML systems from prototype to reliable production. Experience spans computer
+vision, data pipelines, and MLOps --- building, deploying, and monitoring models on
+cloud and edge hardware. Comfortable across the full ML workflow: data sourcing,
+training, serving, and observability.
+
+% ---------- Experience ----------
+\section{Experience}
+\role{Machine Learning Engineer}{Identv}{Present}
+\begin{itemize}
+  \item Design and ship computer-vision and identity-verification models into production services.
+  \item Build data pipelines and model-serving infrastructure with an emphasis on reliability and latency.
+  \item Own model evaluation, drift monitoring, and rollback strategy across the ML lifecycle.
+\end{itemize}
+\vspace{4pt}
+\role{Software Engineer}{Ekbana}{Earlier}
+\begin{itemize}
+  \item Developed backend services and data-driven features for client products.
+  \item Worked across the stack --- APIs, databases, and deployment --- in a fast-paced consultancy setting.
+\end{itemize}
+
+% ---------- Education ----------
+\section{Education}
+\role{M.Sc. Computer Science (OMSCS)}{Georgia Institute of Technology}{Online}
+\begin{itemize}
+  \item Specialization in Machine Learning / Computing Systems.
+\end{itemize}
+\vspace{4pt}
+\entry{B.E. Electronics \& Communication Engineering}{IOE, Thapathali Campus}
+
+\newpage
+
+% ---------- Skills ----------
+\section{Technical Skills}
+\begin{tabbing}
+\hspace{2.4cm}\=\kill
+\textbf{Languages} \> Python, SQL, Bash, JavaScript \\
+\textbf{ML / DL} \> PyTorch, scikit-learn, TensorRT, computer vision, clustering \\
+\textbf{MLOps} \> Prefect, Airflow, MLflow, model registries, drift detection \\
+\textbf{Cloud} \> AWS (Lambda, S3, CloudWatch), Terraform, serverless \\
+\textbf{Edge / HW} \> NVIDIA Jetson, CUDA, cuDNN, SDK Manager \\
+\textbf{Tooling} \> Docker, Git, Pyenv / Pipenv / Poetry, FFmpeg \\
+\end{tabbing}
+
+% ---------- Projects ----------
+\section{Selected Projects \& Writing}
+\entry{Robust MLOps Infrastructure}{Blog}
+\begin{itemize}
+  \item Pragmatic patterns for testing, drift detection, rollback, and flexible serving in production ML.
+\end{itemize}
+\vspace{3pt}
+\entry{Automated Image Clustering for E-commerce}{Case study}
+\begin{itemize}
+  \item Unsupervised pipeline to cluster product imagery at scale; from data sourcing to evaluation.
+\end{itemize}
+\vspace{3pt}
+\entry{NVIDIA Jetson + TensorRT Benchmarking}{Guide}
+\begin{itemize}
+  \item End-to-end setup of Jetson dev boards and TensorRT optimization of PyTorch models with benchmarks.
+\end{itemize}
+
+% ---------- Writing ----------
+\section{Writing}
+\begin{itemize}
+  \item Author of \href{https://shekharkoirala.github.io}{DumpDocs} --- a personal blog on ML, AI, MLOps, and Python (15+ technical guides \& case studies).
+\end{itemize}
+
+% ---------- Languages ----------
+\section{Languages}
+\begin{tabbing}
+\hspace{2.4cm}\=\kill
+\textbf{English} \> Professional \\
+\textbf{Nepali} \> Native \\
+\end{tabbing}
+
+\end{document}

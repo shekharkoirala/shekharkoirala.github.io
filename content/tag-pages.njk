@@ -1,0 +1,31 @@
+---js
+// <script>
+const pagination = {
+	data: "collections.tagList",
+	size: 1,
+	alias: "tagData",
+	addAllPagesToCollections: false,
+};
+
+const eleventyExcludeFromCollections = true;
+const layout = "layouts/base.njk";
+
+const eleventyComputed = {
+	title: data => `Tagged "${data.tagData.name}"`,
+	permalink: function(data) {
+		return `/tags/${this.slugify(data.tagData.key)}/`;
+	},
+};
+---
+<h1>Tagged "{{ tagData.name }}"</h1>
+
+<ul class="postlist">
+{%- for post in tagData.posts | reverse %}
+<li class="postlist-item">
+	<a href="{{ post.url }}" class="postlist-link">{{ post.data.title }}</a>
+	<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+</li>
+{%- endfor %}
+</ul>
+
+<p><a href="/tags/">&#8592; All Tags</a></p>

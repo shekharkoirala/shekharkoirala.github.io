@@ -1,0 +1,44 @@
+---
+layout: layouts/base.njk
+---
+<style>{% include "node_modules/prismjs/themes/prism-okaidia.css" %}</style>
+
+<article class="post-article">
+	{%- if cover %}
+	<img src="{{ cover }}" alt="{{ title }}" class="post-cover">
+	{%- endif %}
+
+	<header class="post-header">
+		<h1 class="post-title">{{ title }}</h1>
+		<div class="post-meta">
+			<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+			{%- if categoryGroup %}
+			<span class="meta-sep">&middot;</span>
+			<a href="/categories/{{ categoryGroup | slugify }}/" class="post-category">{{ categoryGroup }}</a>
+			{%- endif %}
+		</div>
+		{%- if tags %}
+		<div class="post-tags">
+			{%- for tag in tags | filterTagList %}
+			{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+			<a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>
+			{%- endfor %}
+		</div>
+		{%- endif %}
+	</header>
+
+	<div class="post-content">
+		{{ content | safe }}
+	</div>
+
+	{%- if collections.posts %}
+	{%- set previousPost = collections.posts | getPreviousCollectionItem %}
+	{%- set nextPost = collections.posts | getNextCollectionItem %}
+	{%- if nextPost or previousPost %}
+	<nav class="post-nav links-nextprev">
+		{%- if previousPost %}<div class="links-nextprev-prev"><span>&#8592; Previous</span><br><a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></div>{% endif %}
+		{%- if nextPost %}<div class="links-nextprev-next"><span>Next &#8594;</span><br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></div>{% endif %}
+	</nav>
+	{%- endif %}
+	{%- endif %}
+</article>
